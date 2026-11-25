@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>බෞද්ධ ශිෂ්ටාචාරය (45 S-I) - 2025 උසස් පෙළ MCQ පුහුණු පත්‍රය</title>
+
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Load Noto Sans Sinhala & Inter Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sinhala: ['"Noto Sans Sinhala"', '"Inter"', 'sans-serif'],
+            sans: ['"Noto Sans Sinhala"', '"Inter"', 'sans-serif'],
+          },
+          colors: {
+            lotus: {
+              50: '#fff8f3',
+              100: '#ffede0',
+              200: '#ffd7bc',
+              300: '#ffb88a',
+              400: '#ff8f4f',
+              500: '#f56a24',
+              600: '#e25114',
+              700: '#bb3d10',
+              800: '#953214',
+              900: '#782c14',
+            },
+            ochre: {
+              50: '#fefce8',
+              100: '#fef9c3',
+              200: '#fef08a',
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+              700: '#a16207',
+              800: '#854d0e',
+              900: '#713f12',
+            },
+            heritage: {
+              950: '#1c1411',
+              900: '#2a1e19',
+              850: '#372720',
+              800: '#453128',
+            }
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Custom typography & smooth scroll refinements for Sinhala script */
+    body {
+      font-family: 'Noto Sans Sinhala', 'Inter', sans-serif;
+      line-height: 1.75;
+      letter-spacing: 0.005em;
+    }
+
+    .sinhala-prose {
+      line-height: 1.9;
+    }
+
+    /* Subtle heritage pattern accent */
+    .heritage-header-gradient {
+      background: linear-gradient(135deg, #7c2d12 0%, #9a3412 45%, #b45309 100%);
+    }
+
+    .dark .heritage-header-gradient {
+      background: linear-gradient(135deg, #431407 0%, #5c1d0c 50%, #78350f 100%);
+    }
+
+    /* Custom scrollbar for question palette */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(120, 53, 15, 0.06);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(180, 83, 9, 0.35);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(180, 83, 9, 0.55);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.25s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#fcfaf7] text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-200 selection:bg-amber-200 selection:text-amber-950">
+
+  <!-- Top Navigation / Exam Banner -->
+  <header class="heritage-header-gradient text-white shadow-lg sticky top-0 z-30 border-b border-amber-300/20">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <!-- Title & Badge -->
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-amber-400/20 border border-amber-200/40 flex items-center justify-center shrink-0 shadow-inner">
+          <!-- Inline SVG Dharma Chakra / Lotus Motif -->
+          <svg class="w-6 h-6 text-amber-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="3" />
+            <path d="M12 3v6M12 15v6M3 12h6M15 12h6M5.6 5.6l4.2 4.2M14.2 14.2l4.2 4.2M18.4 5.6l-4.2 4.2M9.8 14.2l-4.2 4.2" />
+          </svg>
+        </div>
+        <div class="truncate">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs sm:text-sm font-bold tracking-wide uppercase bg-amber-300/20 text-amber-100 px-2.5 py-0.5 rounded-full border border-amber-200/30">
+              2025 උසස් පෙළ • 45 S-I
+            </span>
+            <span class="hidden md:inline text-xs text-amber-100/85">
+              ප්‍රශ්න 50 • කාලය: පැය 2 (මිනිත්තු 120)
+            </span>
+          </div>
+          <h1 class="text-base sm:text-xl font-bold truncate mt-0.5">
+            බෞද්ධ ශිෂ්ටාචාරය I — ඔන්ලයින් MCQ ප්‍රශ්න පත්‍රය
+          </h1>
+        </div>
+      </div>
+
+      <!-- Timer & Quick Controls -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+        <!-- Timer Pill -->
+        <div id="timer-box" class="flex items-center gap-2 bg-black/25 backdrop-blur-sm border border-amber-200/30 rounded-2xl px-3 py-1.5 shadow-inner">
+          <svg class="w-4 h-4 text-amber-300 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" />
+          </svg>
+          <span id="timer-display" class="font-mono text-sm sm:text-base font-bold tracking-wider text-amber-100">
+            02:00:00
+          </span>
+          <span id="timer-status-badge" class="hidden sm:inline text-[11px] px-1.5 py-0.5 rounded-md bg-emerald-500/25 text-emerald-200 border border-emerald-300/30">
+            ක්‍රියාත්මකයි
+          </span>
+        </div>
+
+        <!-- Pause/Resume Timer Button -->
+        <button
+          id="btn-toggle-timer"
+          type="button"
+          title="කාලය නවත්වන්න / නැවත අරඹන්න"
+          class="p-2.5 sm:px-3 sm:py-2 rounded-2xl bg-white/15 hover:bg-white/25 active:scale-95 transition text-xs sm:text-sm font-medium flex items-center gap-1.5 border border-white/20"
+        >
+          <svg id="icon-pause" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6 4a1 1 0 011 1v10a1 1 0 11-2 0V5a1 1 0 011-1zm8 0a1 1 0 011 1v10a1 1 0 11-2 0V5a1 1 0 011-1z" clip-rule="evenodd" />
+          </svg>
+          <svg id="icon-play" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6.5 4.5a1 1 0 011.555-.832l8 5.5a1 1 0 010 1.664l-8 5.5A1 1 0 016.5 15.5v-11z" clip-rule="evenodd" />
+          </svg>
+          <span id="label-toggle-timer" class="hidden sm:inline">නවත්වන්න</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button
+          id="btn-theme-toggle"
+          type="button"
+          title="ආලෝක / අඳුරු තේමාව"
+          class="p-2.5 rounded-2xl bg-white/15 hover:bg-white/25 active:scale-95 transition border border-white/20"
+        >
+          <svg id="icon-sun" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" />
+          </svg>
+          <svg id="icon-moon" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Inline Notification / Banner Message Box (Replaces alert/confirm) -->
+  <div id="toast-banner" class="hidden max-w-5xl mx-auto px-4 mt-4 animate-fade-in">
+    <div id="toast-inner" class="rounded-2xl px-4 py-3 border flex items-center justify-between gap-3 shadow-sm text-sm font-medium">
+      <span id="toast-text"></span>
+      <button id="toast-close" type="button" class="text-xs px-2.5 py-1 rounded-xl bg-black/10 hover:bg-black/20 transition">
+        වසන්න
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-3 sm:px-6 py-5 sm:py-7">
+
+    <!-- Mode & View Control Bar -->
+    <section class="bg-white dark:bg-stone-900 rounded-3xl p-4 sm:p-5 shadow-sm border border-amber-900/10 dark:border-stone-800 mb-6">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+
+        <!-- Mode Selector: Practice vs Exam -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2.5">
+          <span class="text-xs sm:text-sm font-semibold text-stone-600 dark:text-stone-300">
+            ප්‍රශ්න පත්‍ර මාදිලිය:
+          </span>
+          <div class="inline-flex rounded-2xl p-1 bg-amber-50 dark:bg-stone-800 border border-amber-900/10 dark:border-stone-700 w-fit">
+            <button
+              id="mode-practice-btn"
+              type="button"
+              class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 bg-amber-700 text-white shadow-sm"
+            >
+              <span>පුහුණු මාදිලිය (Practice)</span>
+            </button>
+            <button
+              id="mode-exam-btn"
+              type="button"
+              class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 text-stone-700 dark:text-stone-300 hover:bg-amber-100/70 dark:hover:bg-stone-700"
+            >
+              <span>විභාග මාදිලිය (Exam)</span>
+            </button>
+          </div>
+          <span id="mode-helper-text" class="text-xs text-stone-500 dark:text-stone-400">
+            තෝරාගත් පිළිතුර සඳහා ක්ෂණික නිවැරදි බව සහ පැහැදිලි කිරීම පෙන්වයි.
+          </span>
+        </div>
+
+        <!-- View Mode & Action Buttons -->
+        <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
+          <!-- Single vs All Questions Toggle -->
+          <div class="inline-flex rounded-2xl p-1 bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
+            <button
+              id="view-single-btn"
+              type="button"
+              class="px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition bg-white dark:bg-stone-700 text-amber-800 dark:text-amber-200 shadow-sm"
+            >
+              තනි ප්‍රශ්නය
+            </button>
+            <button
+              id="view-all-btn"
+              type="button"
+              class="px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white"
+            >
+              සියලුම ප්‍රශ්න (50)
+            </button>
+          </div>
+
+          <!-- Reset Timer -->
+          <button
+            id="btn-reset-timer"
+            type="button"
+            class="px-3 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-stone-100 hover:bg-stone-200 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-700 dark:text-stone-200 border border-stone-200 dark:border-stone-700 transition"
+          >
+            කාලය Reset
+          </button>
+
+          <!-- Clear Answers Confirmation Bar Trigger -->
+          <button
+            id="btn-clear-all"
+            type="button"
+            class="px-3 py-2 rounded-2xl text-xs sm:text-sm font-medium bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/50 dark:hover:bg-rose-900/50 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800/60 transition"
+          >
+            පිළිතුරු මකන්න
+          </button>
+
+          <!-- Submit Test Button -->
+          <button
+            id="btn-submit-test"
+            type="button"
+            class="px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold bg-gradient-to-r from-amber-700 to-orange-700 hover:from-amber-800 hover:to-orange-800 text-white shadow-md hover:shadow-lg active:scale-[0.99] transition"
+          >
+            ප්‍රශ්න පත්‍රය භාර දෙන්න (Submit)
+          </button>
+        </div>
+      </div>
+
+      <!-- Inline Confirm Box for Destructive Actions (Clear Answers / Submit Incomplete) -->
+      <div id="inline-confirm-box" class="hidden mt-4 p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3 animate-fade-in">
+        <p id="inline-confirm-message" class="text-xs sm:text-sm font-medium text-amber-950 dark:text-amber-200"></p>
+        <div class="flex items-center gap-2 shrink-0">
+          <button id="inline-confirm-yes" type="button" class="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-800 hover:bg-amber-900 text-white transition">
+            ඔව්, තහවුරු කරන්න
+          </button>
+          <button id="inline-confirm-no" type="button" class="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-200 border border-stone-300 dark:border-stone-600 hover:bg-stone-50 transition">
+            අවලංගු කරන්න
+          </button>
+        </div>
+      </div>
+
+      <!-- Progress Summary Strip -->
+      <div class="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="font-semibold text-stone-700 dark:text-stone-200">
+            පිළිතුරු සැපයූ ප්‍රශ්න: <span id="stat-answered" class="text-amber-700 dark:text-amber-400 font-bold">0</span> / 50
+          </span>
+          <span class="text-stone-600 dark:text-stone-300">
+            සලකුණු කළ (Flagged): <span id="stat-flagged" class="text-amber-600 dark:text-amber-300 font-bold">0</span>
+          </span>
+          <span id="retry-filter-banner" class="hidden px-2.5 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-800 dark:text-rose-200 text-xs font-semibold">
+            වැරදුණු ප්‍රශ්න පමණක් පුහුණු වෙමින්
+          </span>
+        </div>
+
+        <div class="w-full sm:w-64 bg-stone-200 dark:bg-stone-800 h-2.5 rounded-full overflow-hidden">
+          <div id="progress-bar-fill" class="bg-gradient-to-r from-amber-600 to-orange-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary / Score Report View (Shown after submitting or when toggled) -->
+    <section id="results-section" class="hidden mb-8 bg-white dark:bg-stone-900 rounded-3xl p-5 sm:p-7 shadow-md border border-amber-900/15 dark:border-stone-800 animate-fade-in">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-6 border-b border-stone-200 dark:border-stone-800">
+        <div>
+          <span class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-900 dark:text-amber-200 mb-2">
+            ප්‍රතිඵල සාරාංශය (Score Summary)
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 dark:text-white">
+            2025 බෞද්ධ ශිෂ්ටාචාරය I — ප්‍රතිඵලය
+          </h2>
+          <p id="result-grade-remark" class="text-sm sm:text-base text-stone-600 dark:text-stone-300 mt-1"></p>
+        </div>
+
+        <div class="flex flex-wrap gap-2.5">
+          <button
+            id="btn-retry-incorrect"
+            type="button"
+            class="px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-rose-600 hover:bg-rose-700 text-white shadow-sm transition"
+          >
+            වැරදුණු ප්‍රශ්න නැවත පුහුණු වන්න
+          </button>
+          <button
+            id="btn-back-to-questions"
+            type="button"
+            class="px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold bg-amber-100 hover:bg-amber-200 dark:bg-stone-800 dark:hover:bg-stone-700 text-amber-950 dark:text-amber-100 transition"
+          >
+            ප්‍රශ්න පත්‍රය බලන්න
+          </button>
+          <button
+            id="btn-restart-all"
+            type="button"
+            class="px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold bg-stone-800 hover:bg-stone-900 dark:bg-amber-600 dark:hover:bg-amber-700 text-white transition"
+          >
+            මුල සිට නැවත අරඹන්න
+          </button>
+        </div>
+      </div>
+
+      <!-- Score Cards Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 my-6">
+        <div class="rounded-2xl p-4 bg-amber-50/90 dark:bg-stone-800/90 border border-amber-200/70 dark:border-stone-700">
+          <div class="text-xs font-medium text-stone-600 dark:text-stone-400">මුළු ලකුණු</div>
+          <div id="res-score" class="text-2xl sm:text-3xl font-extrabold text-amber-800 dark:text-amber-300 mt-1">0 / 50</div>
+        </div>
+        <div class="rounded-2xl p-4 bg-orange-50/90 dark:bg-stone-800/90 border border-orange-200/70 dark:border-stone-700">
+          <div class="text-xs font-medium text-stone-600 dark:text-stone-400">ප්‍රතිශතය</div>
+          <div id="res-percentage" class="text-2xl sm:text-3xl font-extrabold text-orange-700 dark:text-orange-300 mt-1">0%</div>
+        </div>
+        <div class="rounded-2xl p-4 bg-emerald-50/90 dark:bg-stone-800/90 border border-emerald-200/70 dark:border-stone-700">
+          <div class="text-xs font-medium text-stone-600 dark:text-stone-400">නිවැරදි / වැරදි</div>
+          <div class="text-lg sm:text-xl font-bold mt-1.5">
+            <span id="res-correct" class="text-emerald-700 dark:text-emerald-400">0 නිවැරදි</span>
+            <span class="text-stone-400 mx-1">•</span>
+            <span id="res-wrong" class="text-rose-600 dark:text-rose-400">0 වැරදි</span>
+          </div>
+        </div>
+        <div class="rounded-2xl p-4 bg-stone-100/90 dark:bg-stone-800/90 border border-stone-200/80 dark:border-stone-700">
+          <div class="text-xs font-medium text-stone-600 dark:text-stone-400">ගත වූ කාලය</div>
+          <div id="res-time-taken" class="text-xl sm:text-2xl font-extrabold text-stone-800 dark:text-stone-100 mt-1 font-mono">00:00:00</div>
+        </div>
+      </div>
+
+      <!-- Question-by-Question Review List -->
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <h3 class="text-lg font-bold text-stone-900 dark:text-white">
+            ප්‍රශ්න අනුව සමාලෝචනය (Question-by-Question Review)
+          </h3>
+          <div class="flex items-center gap-2 text-xs">
+            <button id="filter-review-all" type="button" class="px-3 py-1.5 rounded-xl font-semibold bg-amber-800 text-white">සියල්ල (50)</button>
+            <button id="filter-review-wrong" type="button" class="px-3 py-1.5 rounded-xl font-semibold bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-200 hover:bg-rose-200 transition">වැරදුණු / පිළිතුරු නැති</button>
+            <button id="filter-review-correct" type="button" class="px-3 py-1.5 rounded-xl font-semibold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-200 hover:bg-emerald-200 transition">නිවැරදි</button>
+          </div>
+        </div>
+        <div id="review-list-container" class="space-y-4"></div>
+      </div>
+    </section>
+
+    <!-- Main Quiz Workspace: Questions + Palette -->
+    <div id="quiz-workspace" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+      <!-- Left / Main Column: Questions Area -->
+      <section class="lg:col-span-8 space-y-5">
+
+        <!-- Top Question Navigation Strip (Single Question Mode) -->
+        <div id="single-nav-top" class="bg-white dark:bg-stone-900 rounded-2xl px-4 py-3 shadow-sm border border-amber-900/10 dark:border-stone-800 flex items-center justify-between gap-2">
+          <button
+            id="btn-prev-top"
+            type="button"
+            class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-stone-100 hover:bg-amber-100 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-100 transition flex items-center gap-1.5 disabled:opacity-40 disabled:pointer-events-none"
+          >
+            <span>← පෙර ප්‍රශ්නය</span>
+          </button>
+
+          <div class="text-center">
+            <span id="current-q-indicator" class="text-sm sm:text-base font-bold text-amber-800 dark:text-amber-300">
+              ප්‍රශ්නය 1 / 50
+            </span>
+          </div>
+
+          <button
+            id="btn-next-top"
+            type="button"
+            class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-700 hover:bg-amber-800 text-white transition flex items-center gap-1.5 disabled:opacity-40 disabled:pointer-events-none"
+          >
+            <span>ඊළඟ ප්‍රශ්නය →</span>
+          </button>
+        </div>
+
+        <!-- Questions Container -->
+        <div id="questions-container" class="space-y-5"></div>
+
+        <!-- Bottom Question Navigation Strip (Single Question Mode) -->
+        <div id="single-nav-bottom" class="bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 shadow-sm border border-amber-900/10 dark:border-stone-800 flex flex-wrap items-center justify-between gap-3">
+          <button
+            id="btn-prev-bottom"
+            type="button"
+            class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-stone-100 hover:bg-amber-100 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-stone-100 transition disabled:opacity-40 disabled:pointer-events-none"
+          >
+            ← පෙර ප්‍රශ්නය
+          </button>
+
+          <div class="flex items-center gap-2">
+            <button
+              id="btn-clear-current"
+              type="button"
+              class="px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 transition"
+            >
+              පිළිතුර ඉවත් කරන්න
+            </button>
+            <button
+              id="btn-flag-current"
+              type="button"
+              class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/50 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-200 border border-amber-300/70 dark:border-amber-700/60 transition"
+            >
+              සලකුණු කරන්න (Flag)
+            </button>
+          </div>
+
+          <button
+            id="btn-next-bottom"
+            type="button"
+            class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-700 hover:bg-amber-800 text-white transition disabled:opacity-40 disabled:pointer-events-none"
+          >
+            ඊළඟ ප්‍රශ්නය →
+          </button>
+        </div>
+      </section>
+
+      <!-- Right Column: Question Navigation Palette (1 - 50) -->
+      <aside class="lg:col-span-4 lg:sticky lg:top-20 bg-white dark:bg-stone-900 rounded-3xl p-4 sm:p-5 shadow-sm border border-amber-900/10 dark:border-stone-800">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-bold text-stone-900 dark:text-white">
+            ප්‍රශ්න පුවරුව (1 – 50)
+          </h2>
+          <button
+            id="btn-view-score-shortcut"
+            type="button"
+            class="hidden text-xs font-bold text-amber-700 dark:text-amber-400 hover:underline"
+          >
+            ප්‍රතිඵල බලන්න
+          </button>
+        </div>
+
+        <!-- Legend -->
+        <div class="grid grid-cols-2 gap-2 text-xs text-stone-600 dark:text-stone-300 mb-4 pb-3 border-b border-stone-100 dark:border-stone-800">
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-4 rounded-md bg-amber-700 text-white inline-flex items-center justify-center text-[10px] font-bold">1</span>
+            <span>පිළිතුරු සැපයූ</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-4 rounded-md bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-600 inline-block"></span>
+            <span>පිළිතුරු නොදුන්</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-4 rounded-md ring-2 ring-amber-500 bg-amber-100 dark:bg-amber-900/40 inline-block"></span>
+            <span>සලකුණු කළ (Flagged)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-4 h-4 rounded-md border-2 border-stone-900 dark:border-white inline-block"></span>
+            <span>වත්මන් ප්‍රශ්නය</span>
+          </div>
+        </div>
+
+        <!-- 1 to 50 Buttons Grid -->
+        <div id="question-palette" class="grid grid-cols-5 sm:grid-cols-10 lg:grid-cols-5 gap-2 max-h-[380px] overflow-y-auto pr-1"></div>
+
+        <!-- Keyboard Shortcut Hint -->
+        <div class="mt-4 pt-3 border-t border-stone-100 dark:border-stone-800 text-[11px] sm:text-xs text-stone-500 dark:text-stone-400 leading-relaxed">
+          <strong>යතුරුපුවරු කෙටිමං:</strong> පිළිතුරු සඳහා <kbd class="px-1.5 py-0.5 rounded bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 font-mono">1</kbd>–<kbd class="px-1.5 py-0.5 rounded bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 font-mono">5</kbd>, චලනයට <kbd class="px-1.5 py-0.5 rounded bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 font-mono">←</kbd> / <kbd class="px-1.5 py-0.5 rounded bg-stone-100 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 font-mono">→</kbd>.
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-amber-900/10 dark:border-stone-800 bg-white/70 dark:bg-stone-900/70 py-6 px-4 text-center text-xs sm:text-sm text-stone-600 dark:text-stone-400">
+    <p class="font-medium text-stone-800 dark:text-stone-200">
+      අ.පො.ස. (උසස් පෙළ) විභාගය — 2025 • බෞද්ධ ශිෂ්ටාචාරය I (45 S-I)
+    </p>
+    <p class="mt-1">
+      සියලුම බහුවරණ ප්‍රශ්න (1–50) සහ විෂය නිර්දේශයට අනුකූල පැහැදිලි කිරීම් ඇතුළත් ඔන්ලයින් පුහුණු යෙදුම.
+    </p>
+  </footer>
+
+  <script>
+    /**
+     * 2025 G.C.E. A/L Buddhist Civilization Paper I (45 SI)
+     * Complete 50 MCQs Dataset, Answer Key, and Sinhala Explanations
+     */
+    const QUESTIONS_DATA = [
+      {
+        id: 1,
+        question: "බුද්ධකාලීන භාරතීය බ්‍රාහ්මණ ඉගැන්වීම් වලට අනුව දානය ස්වධර්මයක් ලෙස නියම කොට තිබුණේ",
+        options: [
+          "බ්‍රාහ්මණ වර්ණයට පමණි.",
+          "ක්ෂත්‍රිය වර්ණයට පමණි.",
+          "බ්‍රාහ්මණ හා ක්ෂත්‍රිය වර්ණ වලට පමණි.",
+          "ක්ෂත්‍රිය හා වෛශ්‍ය වර්ණ වලට පමණි.",
+          "බ්‍රාහ්මණ, ක්ෂත්‍රිය හා වෛශ්‍ය වර්ණ වලට පමණි."
+        ],
+        correct: 1,
+        explanation: "බ්‍රාහ්මණ වර්ණ ධර්මය අනුව ඉගෙනීම, ඉගැන්වීම, යාග කිරීම, යාග කරවීම, දීම (දානය) සහ ප්‍රතිග්‍රහණය යන සය වැදෑරුම් කාර්යයන් බ්‍රාහ්මණයන්ට ස්වධර්ම ලෙස නියම කර තිබුණි. ක්ෂත්‍රියයන්ට ආරක්ෂාව හා පාලනයත්, වෛශ්‍යයන්ට කෘෂි, ගව පාලන හා වෙළෙඳාමත්, ශුද්‍රයන්ට සේවයත් ප්‍රධාන විය."
+      },
+      {
+        id: 2,
+        question: "හිස් තැනට වඩාත් සුදුසු වචනය තෝරන්න.\nක්‍රි. පූ. 6 වන සියවසේ භාරතයේ පැවති බ්‍රාහ්මණ සංස්කෘතික පරිසරය තුළ කාන්තාව පීඩාවට පත්ව සිටි ආකාරය මෙන් ම බුදු සමයෙන් ඇය අත්විඳි මානසික සුවය ද ........................ පැහැදිලි වේ.",
+        options: [
+          "මනුස්‌ස් ස්මෘතියෙන්",
+          "ථෙරී ගාථාවලින්",
+          "ධම්මපද පාලියෙන්",
+          "සිගාලෝවාද සූත්‍රයෙන්",
+          "භික්ෂුණී ප්‍රාතිමෝක්ෂයෙන්"
+        ],
+        correct: 2,
+        explanation: "ථෙරී ගාථා තුළ තෙරණින් වහන්සේලාගේ පූර්ව පැවිදි ජීවිතයේ පීඩාකාරී අත්දැකීම් (ගෘහ ජීවිතයේ දුක්, සැමියන්ගේ හෝ සමාජයේ පීඩන) මෙන්ම බුදු සසුනේ පැවිද්දත් සමඟ ලබාගත් විමුක්තිය හා මානසික සුවය ඉතා සංවේදීව නිරූපණය වේ."
+      },
+      {
+        id: 3,
+        question: "ගංගා මුවෙහි ගිල්වා තබන ලද කෙමිණ බොහෝ මත්ස්‍යයින්ගේ විනාශය පිණිස හේතු වන්නා සේ මිනිසුන්ට අහිත පිණිස, අවැඩ පිණිස, ව්‍යසන පිණිස, ලෝකයේ උපන් මිනිස් කෙමිණ ලෙස බුදුරජාණන් වහන්සේ විසින් හඳුන්වන ලද බුද්ධකාලීන ආගමික ශාස්තෘවරයා වූයේ",
+        options: [
+          "අජිත කේසකම්බල ය.",
+          "පකුධ කච්චායනය.",
+          "මක්ඛලී ගෝසාල ය.",
+          "පූරණ කස්සප ය.",
+          "සංජය බෙල්ලට්ඨිපුත්ත ය."
+        ],
+        correct: 3,
+        explanation: "අංගුත්තර නිකායේ තික නිපාතයේ එන 'මච්ඡකූට' / ශාස්තෘ විග්‍රහයන්හිදී ආජීවක නායක මක්ඛලී ගෝසාල 'මිනිස් කෙමිණ' (මනුස්ස මච්ඡකූට) ලෙස බුදුරදුන් විසින් හඳුන්වා දී ඇත. ඔහු නියතිවාදය හා අහේතුවාදය දේශනා කළ ශාස්තෘවරයෙකි."
+      },
+      {
+        id: 4,
+        question: "පහත සඳහන් ප්‍රකාශ කියවා බුද්ධකාලීන භාරතීය ශ්‍රමණ සම්ප්‍රදායයේ අනන්‍යතා ලක්ෂණ පමණක් ඇතුළත් වරණය තෝරන්න.\nA - නිදහස් චින්තනය අගය කිරීම\nB - අනගාරික ප්‍රතිපදාව පිළිගැනීම\nC - පුද්ගලයාගේ උපත පදනම් කරගත් සමාජ වර්ගීකරණය බැහැර කිරීම\nD - ඥාන මාර්ගය ප්‍රතික්ෂේප කිරීම\nE - බ්‍රහ්මචර්යාව උසස් ප්‍රතිපදාවක් ලෙස සැලකීම",
+        options: [
+          "ABCD",
+          "ABCE",
+          "ACDE",
+          "BCDE",
+          "ABCDE"
+        ],
+        correct: 2,
+        explanation: "ශ්‍රමණ සම්ප්‍රදායය නිදහස් චින්තනය (A), ගිහි ගෙය හැරදා අනගාරික ප්‍රතිපදාව පිළිගැනීම (B), ජන්මය මත පදනම් වූ වර්ණ/කුල බේද බැහැර කිරීම (C) සහ බ්‍රහ්මචර්යාව උසස් ප්‍රතිපදාවක් ලෙස සැලකීම (E) යන ලක්ෂණවලින් යුක්ත විය. ඥාන මාර්ගය බැහැර නොකළ අතර ප්‍රඥාව/අවබෝධය ද අගය කරන ලදී."
+      },
+      {
+        id: 5,
+        question: "බුදුරජාණන් වහන්සේ බුද්ධත්වයෙන් පසු දහම් දෙසීම සඳහා මගධය බලා වැඩම කළේ",
+        options: [
+          "තපස්සු භල්ලුක වෙළෙඳුන්ගේ ඉල්ලීමකට ය.",
+          "පස්වග තවුසන්ගේ ඉල්ලීමකට ය.",
+          "යස කුල පුත්‍රයාගේ ඉල්ලීමකට ය.",
+          "බිම්බිසාර රජුගේ ඉල්ලීමකටය.",
+          "අජාසත් රජුගේ ඉල්ලීමකටය."
+        ],
+        correct: 4,
+        explanation: "බුද්ධත්වයෙන් පසු රජගහනුවරට වැඩම කළ බුදුරජාණන් වහන්සේට බිම්බිසාර රජතුමා වේළුවනාරාමය පූජා කළ අතර, මගධයේ දහම් ප්‍රචාරය සඳහා රජුගේ ආරාධනාව හා පසුබිම වැදගත් විය (බිම්බිසාර රජු බුද්ධත්වයට පෙර සිටම බුදුරදුන් මගධයට වඩින බවට පොරොන්දු වී තිබුණි)."
+      },
+      {
+        id: 6,
+        question: "ක්‍රි. පූ. 6 වන සියවසේ භාරතයේ ක්‍රියාත්මකව පැවති රාජාණ්ඩු සහ සමූහාණ්ඩු තුළ දක්නට ලැබුණු පොදු ලක්ෂණයක් වූයේ",
+        options: [
+          "ව්‍යවස්ථාදායක, විධායක හා අධිකරණ බලතල පාලක පක්ෂය විසින් ම ක්‍රියාත්මක කිරීමයි.",
+          "මත්ස්‍ය න්‍යාය ක්‍රියාත්මක කරමින් රාජ්‍යයේ සීමා පුළුල් කිරීමයි.",
+          "යුවරජ, පුරෝහිත, අධිකරණ නායක සහ සේනාපති මගින් බලය ක්‍රියාත්මක කිරීමයි.",
+          "පරපුරෙන් පරපුරට රාජධානියේ හිමිකාරීත්වය පවත්වා ගැනීමයි.",
+          "ප්‍රාදේශීය පාලකයන් සමූහයක් පාලන තන්ත්‍රයට සම්බන්ධව සිටීමයි."
+        ],
+        correct: 5,
+        explanation: "රාජාණ්ඩුවල රජු යටතේ ප්‍රාදේශීය/ග්‍රාමීය පාලකයන් හා නිලධාරීන් පාලනයට සම්බන්ධ වූ අතර, සමූහාණ්ඩුවල (ගණ/සංඝ රාජ්‍ය) ප්‍රාදේශීය රාජ්‍ය නායකයන් හෝ ගෝත්‍රික ප්‍රධානීන් සමූහයක් සභා/සමිති මඟින් පාලන තන්ත්‍රයට සම්බන්ධව ක්‍රියා කළහ."
+      },
+      {
+        id: 7,
+        question: "තුන් කල්හි ම පැවති\nපද රුත් සියල් ලොව ඇති\nඅතැඹුලසෙ දැන ගති\nබුදුගුණාලංකාරයේ එන ඉහත සඳහන් කවියෙන් විස්තර වන බුදුගුණය කුමක්ද?",
+        options: [
+          "භගවා",
+          "සත්ථා",
+          "සුගත",
+          "සම්මා සම්බුද්ධ",
+          "ලෝකවිදූ"
+        ],
+        correct: 4,
+        explanation: "චතුරාර්ය සත්‍යය ඇතුළු සියලු ධර්මයන් කිසිවකුගේ උපදෙසකින් තොරව තමා විසින්ම මනාව අවබෝධ කරගැනීම 'සම්මා සම්බුද්ධ' ගුණයයි. 'අතැඹුලසෙ දැන ගති' යන්නෙන් සියල්ල පැහැදිලිව දැනගත් බව කියැවේ."
+      },
+      {
+        id: 8,
+        question: "\"සත්‍යය අවබෝධ කළ ඒ භාග්‍යවතුන් වහන්සේ සත්ත්වයාගේ අවබෝධය පිණිස දහම් දෙසති. ක්ලේශ පරිනිර්වාණයෙන් පිරිනිවි ඒ භාග්‍යවතුන් වහන්සේ සත්ත්වයාගේ ක්ලේශ පරිනිර්වාණය පිණිස දහම් දෙසති.\"\nඉහත ප්‍රකාශයෙන් ප්‍රකට වන බුදු ගුණය හැඳින්වීමට වඩාත් සුදුසු යෙදුම වන්නේ",
+        options: [
+          "මහා ප්‍රඥාවයි.",
+          "මෙත්තා ගුණයයි.",
+          "මහා කරුණාවයි.",
+          "පරිත්‍යාගයයි.",
+          "අධිෂ්ඨානයයි."
+        ],
+        correct: 3,
+        explanation: "සත්ත්වයන් සසර දුකින් හා ක්ලේශයන්ගෙන් මුදවා ගැනීම සඳහා අවබෝධ කරගත් සත්‍යය අනුන්ට දේශනා කිරීමට පෙළඹවූ ප්‍රධාන චිත්ත ශක්තිය 'මහා කරුණාව' (අනුන්ගේ දුක දැක එය නැති කිරීමට ඇති කැමැත්ත) වේ."
+      },
+      {
+        id: 9,
+        question: "\"මහණෙනි! මම දැන් ඔබ අමතමි. සංස්කාරයෝ නැසෙන සුලු ය. අප්‍රමාදීව විමුක්ති සාධනයට කටයුතු කරන්න.\"\nබුදුරජාණන් වහන්සේ තුළ පැවති ශ්‍රේෂ්ඨ චරිත ලක්ෂණයක් ප්‍රකට කරන ඉහත ප්‍රකාශය හැඳින්වීමට වඩාත් උචිත යෙදුම ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "තාදී බුදුගුණය",
+          "පද්මාකාර ජිවිතය",
+          "නිදහස් චින්තනය",
+          "විශිෂ්ට ශාස්තෘත්වය",
+          "පරිනිර්වාණයට නොබියව මුහුණදීම"
+        ],
+        correct: 5,
+        explanation: "මහා පරිනිබ්බාණ සූත්‍රයේ එන මෙම පශ්චිම බුද්ධ වචනයෙන් පිරිනිවන් මංචකයේ සිටියදී පවා සංස්කාරයන්ගේ අනිත්‍යතාව යථාර්ථවාදීව දකිමින්, කිසිදු භීතියකින් තොරව පරිනිර්වාණයට මුහුණ දුන් ආකාරයත්, ශ්‍රාවකයන්ට අවසන් අවවාදය දුන් ආකාරයත් පෙනේ."
+      },
+      {
+        id: 10,
+        question: "\"බුදුරජාණන් වහන්සේ වනාහි උන්වහන්සේ විසින් දේශනා කරන ලද සියලු ම ගුණ ධර්මයන්ගේ ප්‍රතිමූර්තියයි. හතළිස් පස් වසරක කාලය තුළදී තමන් විසින් ප්‍රකාශ කරන ලද වචන උන්වහන්සේ ක්‍රියාවට නැගූහ. කිසිදු දුබලතාවක් හෝ පහත් හැඟීමක් හෝ උන්වහන්සේගෙන් කිසිවිටෙකත් දෘශ්‍යමාන නො වීය. ලෝකයට ඉතා පරිපූර්ණ ආචාර ධර්ම පද්ධතියක් ඉදිරිපත් කරන ලද්දේ ද බුදුරජාණන් වහන්සේ විසිනි.\"\nඉහත ප්‍රකාශය කරන ලද්දේ කවුරුන් විසින්ද?",
+        options: [
+          "මහාචාර්ය මැක්ස් මුලර්",
+          "මහාචාර්ය සෝණ්ඩර්ස්",
+          "මහාචාර්ය ලක්ෂ්මී නරසු",
+          "ඇල්බට් අයින්ස්ටයින්",
+          "බර්ට්‍රන්ඩ් රසල්"
+        ],
+        correct: 3,
+        explanation: "බුදුදහමේ හා බුදුරජාණන් වහන්සේගේ චරිතයේ සදාචාරාත්මක උත්තරීතරභාවය පිළිබඳව මහාචාර්ය ලක්ෂ්මී නරසු (The Essence of Buddhism කෘතියේ කර්තෘ) විසින් සිදු කරන ලද ප්‍රකාශය මෙය වේ."
+      },
+      {
+        id: 11,
+        question: "පහත සඳහන් ප්‍රකාශ අතුරෙන් චිත්ත ගහපතිතුමාගේ චරිතය හා නොගැළපෙන ප්‍රකාශය තෝරන්න.",
+        options: [
+          "ධර්මඥානය අඩු භික්ෂූන්ට ධර්මඥානය ලබාදීමට කටයුතු කිරීම",
+          "සිය බිරිඳ විවාහ කරගත් දින සිට සිතින්වත් වෙනත් කාන්තාවක් නො පැතූ, මතු ආත්මවලදී ද ඇය හා එක්ව විසීමට ප්‍රාර්ථනා කළ උපාසකයා වීම",
+          "රූපාවචර ධ්‍යාන හතර ම උපදවාගත් අනාගාමී උපාසකයෙක් වීම",
+          "ධර්ම කථික උපාසකයන් අතර අග්‍ර උපාසකයා වීම",
+          "සුධම්ම භික්ෂුවගේ ගර්හාවට ලක්ව බුදුරජාණන් වහන්සේ විසින් ප්‍රථම වතාවට පටිසාරණීය කර්මය පැණවීමට හේතු වූ උපාසකයා වීම"
+        ],
+        correct: 2,
+        explanation: "චිත්ත ගහපතිතුමා ධර්ම කථික උපාසකයන් අතර අග්‍ර වූ අනාගාමී ශ්‍රාවකයෙකි. ඔහු භික්ෂූන්ට ධර්මය පහදා දුන් අතර සුධම්ම භික්ෂුවගේ සිද්ධිය පටිසාරණීය කර්මයට හේතු විය. 'සිය බිරිඳ සමඟ මතු ආත්මවලදීත් එක්ව විසීමට ප්‍රාර්ථනා කළ' යන්න ඔහුගේ චරිතයට අදාළ නොවන (නොගැළපෙන) කරුණකි."
+      },
+      {
+        id: 12,
+        question: "බුදුරජාණන් වහන්සේගේ අග්‍ර උපස්ථායක තනතුරට පත්වීමේදී ආනන්ද හිමියන් විසින් ඉදිරිපත් කරන ලද වරප්‍රසාද හතරට අයත් නො වන කරුණ කුමක්ද?",
+        options: [
+          "බුදුරජාණන් වහන්සේ ජේතවනාරාමයෙහි වැඩ නො සිටින අවස්ථාවල උන්වහන්සේට පූජා පිණිස ලැබෙන මල්, පහන් ආදිය ආනන්ද බෝධීන් වහස්ට පූජා කිරීමට අවසර ලබාදීම",
+          "ආනන්ද හිමියන් විසින් භාරගනු ලබන ආරාධනා බුදුරජාණන් වහන්සේ විසින් පිළිගතයුතු වීම",
+          "පිටතින් පැමිණෙන කවරකු හෝ කැමති වේලාවක බුදුරජාණන් වහන්සේ මුණගැස්සවීමට අවසර දියයුතු වීම",
+          "ආනන්ද හිමියන්ට කවර හෝ සැකයක් ඇති වූ කල්හි එකෙණෙහි ම එය විචාරීමට අවසර ලැබිය යුතු වීම",
+          "ආනන්ද හිමියන් නො සිටි ස්ථානවලදී දේශනා කරන ලද ධර්මය නැවත වරක් දේශනා කළ යුතු වීම"
+        ],
+        correct: 1,
+        explanation: "ආනන්ද බෝධිය රෝපණය කිරීම පසුකාලීනව සැදැහැවතුන්ගේ පූජා පහසුව සඳහා සිදු කළ දෙයකි. ආනන්ද හිමියන් අග්‍ර උපස්ථායක ධුරය භාරගැනීමේදී ඉල්ලා සිටි වරප්‍රසාද අතර බුදුරදුන්ට ලැබෙන සිවුරු/ලාභ තමාට නොදීම, තමාට ලැබෙන ඒවා බුදුරදුන්ට පූජා කිරීම, බුදුරදුන්ට ලැබෙන ආරාධනා තමාට ගෙන ඒම, කැමති වේලාවක බුදුරදුන් වෙත යාමට අවසරය සහ තමා නොසිටි තැන්වල දෙසූ දහම් නැවත පැවසීම ආදිය සඳහන් වේ."
+      },
+      {
+        id: 13,
+        question: "සමාජ සංස්ථාවන්ගේ ප්‍රභවය හා පරිණාමය පිළිබඳ අග්ගඤ්ඤ සූත්‍රාගත විස්තරයට අනුව විවිධ සමාජ සංසිද්ධීන් පටිච්චසමුප්පන්නව පරිණාමය වීමේ ප්‍රතිඵලයක් ලෙස රාජ්‍යය බිහි විය. එහිලා පාලකයකු පත්කර ගැනීමේ ආසන්නතම හේතුව ලෙස හඳුනාගත හැක්කේ",
+        options: [
+          "කෙත්වතු ආදියෙහි භාරකාරත්වය හා පාලනයයි.",
+          "ජනතාවගේ ජීවත්වීමේ අයිතිය සුරක්ෂිත කරගැනීමයි.",
+          "ජනතාවගේ දේපළ රැස්කර ගැනීමේ අයිතිය සුරක්ෂිත කරගැනීමයි.",
+          "පරිහානියට පත් සදාචාරය නැවත සමාජය තුළ ස්ථාපනය කිරීමයි.",
+          "ජනතාවගේ අයිතිවාසිකම් උල්ලංඝනය කරන වැරදිකරුවන් සොයා ඔවුන්ට දඬුවම් ලබාදීමයි."
+        ],
+        correct: 1,
+        explanation: "අග්ගඤ්ඤ සූත්‍රයට අනුව ශාලි (ඇල්) වී කෙත් බෙදා වෙන් කර ගැනීමත් සමඟ සොරකම හා අසාධාරණය ඇති වූ විට, කෙත්වතු සාධාරණව බෙදා දී වරදට දඬුවම් කිරීම සඳහා සමාජ සම්මුතියෙන් 'මහාසම්මත' නම් පාලකයකු පත් කර ගන්නා ලදී."
+      },
+      {
+        id: 14,
+        question: "රාජ්‍ය පාලනය පිළිබඳ බෞද්ධ මූලධර්ම අනුව රටක ආර්ථික ප්‍රතිපත්තිය තුළ පැවතිය යුතු මූලික ලක්ෂණයක් ලෙස සැලකිය හැක්කේ",
+        options: [
+          "අය බදු වැඩි කොට රාජ්‍ය භාණ්ඩාගාරය ශක්තිමත් කිරීමයි.",
+          "ජනතාවගේ ආර්ථික අවශ්‍යතා හඳුනාගෙන ඒ ඒ ක්ෂේත‍්‍රවල දක්ෂතා ඇති අයට අවශ්‍ය පහසුකම් සැලසීමයි.",
+          "අපරාධවල නියැලෙන පුද්ගලයන්ට ලබාදෙන දඬුවම් වැඩි කිරීමයි.",
+          "දිළිඳු පුද්ගලයන්ට ධනවතුන්ගේ සහාය ලබාදීමයි.",
+          "රාජ්‍ය භාණ්ඩාගාරය සතු ධනය අවශ්‍යතා අනුව දිළිඳු පුද්ගලයන් අතර බෙදාදීමයි."
+        ],
+        correct: 2,
+        explanation: "කූටදන්ත හා චක්කවත්ති සීහනාද සූත්‍රවල පෙන්වා දෙන පරිදි දුප්පත්කම තුරන් කිරීමට හුදු දීමනා දීමට වඩා කෘෂිකර්මයට බීජ/පහසුකම්, වෙළෙඳාමට ප්‍රාග්ධනය සහ රැකියා/ක්ෂේත්‍ර දියුණුවට අවශ්‍ය පහසුකම් සැලසීමෙන් ආර්ථිකය සවිබල ගැන්විය යුතුය."
+      },
+      {
+        id: 15,
+        question: "\"මදයෙන් හා ප්‍රමාදයෙන් තොර බහුශ්‍රැත මහණ බමුණන් වෙත එළඹ අවවාද අනුශාසනා ලබා රට පාලනය කළ යුතු ය\" යන බෞද්ධ රාජ්‍ය පාලන මූලධර්මය ඇතුළත් වන්නේ",
+        options: [
+          "සප්ත අපරිහානිය ධර්ම තුළය.",
+          "දස සක්විතිවත් තුළ ය.",
+          "කූටදන්ත සූත්‍රාගත රාජ්‍ය පාලන මූලධර්ම තුළය.",
+          "දස රාජ ධර්ම තුළ ය.",
+          "අග්ගඤ්ඤ සූත්‍රාගත රාජ්‍ය පාලන සිද්ධාන්ත තුළය."
+        ],
+        correct: 2,
+        explanation: "දස සක්විතිවත් (චක්කවත්ති සීහනාද සූත්‍රය) තුළ සඳහන් වන පරිදි රජෙකු ධාර්මික පාලනයක් සඳහා ශ්‍රමණ බ්‍රාහ්මණයන් වෙත එළඹ කුසල-අකුසල හා හිත-අහිත පිළිබඳව විමසා උපදෙස් ලබා ගැනීම මූලික වගකීමකි."
+      },
+      {
+        id: 16,
+        question: "බුද්ධකාලීන භාරතීය සමාජයෙහි මුල් බැස ගත් ආගමික විශ්වාසයක් වූ ඊශ්වර නිර්මාණ වාදයේ ලක්ෂණයක් ලෙස නොසැලකිය හැකි කරුණ ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "පුද්ගලයාට ස්වච්ඡන්දතාව අහිමි වීම",
+          "පුද්ගලයාට සිය ස්වාමිත්වය අහිමි වීම",
+          "ජන්මිය සාධක පදනම් කොට ගෙන මානව වර්ගයා උසස් පහත් ලෙස වර්ගීකරණය කිරීම",
+          "යෝග අභ්‍යාස ප්‍රගුණ කිරීම",
+          "කර්ම මාර්ගයට ප්‍රමුඛතාව ලැබීම"
+        ],
+        correct: 5,
+        explanation: "දැඩි ඊශ්වර නිර්මාණවාදයකදී සියල්ල මැවුම්කරුගේ කැමැත්ත මත සිදුවන බැවින් පුද්ගල ස්වාධීනත්වය/ස්වච්ඡන්දතාව සීමා වේ. ස්වාධීන කර්ම ශක්තිය හා පුද්ගල වගකීම ඊශ්වර නිර්මාණවාදයේ මූලික ලක්ෂණයක් නොවේ."
+      },
+      {
+        id: 17,
+        question: "ආරම්භ ධාතු, නික්කම ධාතු, පරක්කම ධාතු, ථාමධාතු, ඨිතිධාතු, උපක්කමධාතු යනුවෙන් දැක්වෙන්නේ බෞද්ධ ඉගැන්වීම් මගින් පුද්ගලයාගේ ස්වාධීනත්වය, ශක්තිය හා පෞරුෂය අවධාරණය කොට ඇති ආකාරයයි. පහත සඳහන් ප්‍රකාශ අතුරෙන් මෙම ඉගැන්වීම් හා නොගැළපෙන ප්‍රකාශය තෝරන්න.",
+        options: [
+          "කර්මය මගින් පුද්ගලයාගේ දියුණුව හා පරාභවය තීරණය කෙරේ.",
+          "සචේතනික වූ හොඳ හෝ නරක ක්‍රියාවේ වගකීම කර්තෘ වෙත පැවරේ.",
+          "විමුක්තිය උදාකර ගැනීම ඔබගේ කාර්යයකි. තථාගතවරු මාර්ගය පෙන්වති.",
+          "තමා විසින් කරන ලද පාපය තමා ම කිලුටට පත් කරයි.",
+          "පුද්ගලයාට ස්වච්ඡන්දතාවක් ඇත."
+        ],
+        correct: 1,
+        explanation: "බුදුදහමේ පුද්ගල දියුණුව හෝ පිරිහීම (පරාභවය) තීරණය වන්නේ පුද්ගලයාගේ ම ක්‍රියාකලාපය, වීර්යය හා ආකල්ප මත මිස හුදු අතීත කර්මය මත පමණක් නොවේ ('කම්මස්සකතා' යනු තම ක්‍රියාවේ වගකීම තමා සතු වීමයි; 'කර්මය මගින් පමණක් දියුණුව/පරාභවය තීරණය කෙරේ' යන්න පුද්ගල වීර්යය/පෞරුෂය අවධාරණය කරන මෙම සන්දර්භය හා නොගැළපේ)."
+      },
+      {
+        id: 18,
+        question: "\"සිත, කය සහ වචනයෙන් සිදු කරනු ලබන යම් ක්‍රියාවක් තමාට අහිත පිණිස හේතු වේ ද අනුන්ට අහිත පිණිස හේතු වේද තමා හා අනුන් යන උභය පක්ෂයට අහිත පිණිස හේතු වේද එවැනි ක්‍රියා සිදු නො කළ යුතු බව බෞද්ධ ඉගැන්වීමයි.\" හොඳ - නරක විනිශ්චයෙහිලා නිර්ණායකයක් ලෙස උපයෝගි කර ගත හැකි මෙම ඉගැන්වීම ඇතුළත් වනුයේ",
+        options: [
+          "ධම්මපදයේ ය.",
+          "අම්බලට්ඨිකරාහුලෝවාද සූත්‍රයේ ය.",
+          "කාලාම සූත්‍රයේ ය.",
+          "මහා පරිනිබ්බාණ සූත්‍රයේ ය.",
+          "වේළුද්වාර සූත්‍රයේය."
+        ],
+        correct: 2,
+        explanation: "මජ්ඣිම නිකායේ අම්බලට්ඨිකරාහුලෝවාද සූත්‍රයේදී රාහුල හිමියන්ට කායික, වාචසික හා මානසික ක්‍රියා සිදු කිරීමට පෙර, කරන අතරතුර සහ කළ පසු එය තමාට, අනුන්ට හෝ දෙපාර්ශ්වයටම අහිතකරදැයි (ව්‍යාබාධයට හේතු වේදැයි) විමසා බලන ලෙස උගන්වා ඇත."
+      },
+      {
+        id: 19,
+        question: "කායික, වාචසික, මානසික යන තිදොරින් ම සිදුවන අකුසල් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "ප්‍රාණඝාතය, අදත්තාදානය, මුසාවාදය",
+          "ප්‍රාණඝාතය, කේලාම් කීම, අභිධ්‍යාව",
+          "පරුෂ වචනය, අභිධ්‍යාව, ව්‍යාපාදය",
+          "අදත්තාදානය, පරදාර සේවනය, පරුෂ වචනය",
+          "හිස් වචන කීම, ව්‍යාපාදය, මිථ්‍යා දෘෂ්ටිය"
+        ],
+        correct: 2,
+        explanation: "ප්‍රාණඝාතය කායික අකුසලයකි; කේලාම් කීම වාචසික අකුසලයකි; අභිධ්‍යාව මානසික අකුසලයකි. එබැවින් තිදොරින්ම සිදුවන අකුසල් එක් බැගින් ඇතුළත් වරණය (2) වේ."
+      },
+      {
+        id: 20,
+        question: "පහත දැක්වෙන්නේ ශ්‍රද්ධාව පිළිබඳ ප්‍රකාශ කිහිපයකි.\nA - ශ්‍රද්ධාව ආර්ය අෂ්ටාංගික මාර්ගයේ අංගයක් නො වේ.\nB - තෙරුවන් ගුණ පිළිබඳ අවබෝධයෙන් ඇති කරගනු ලබන පැහැදීම අමූලිකා ශ්‍රද්ධාවයි.\nC - \"ශ්‍රද්ධාව මිනිසාට ශ්‍රේෂ්ඨ ධනය වේ\" යැයි ආලවක සූත්‍රයේ සඳහන් වේ.\nD - නිර්වාණ මාර්ගය නමැති කෙතෙහි බීජය ශ්‍රද්ධාවයි.\nE - පුද්ගලයා ධර්ම ශ්‍රවණයට යොමුකොට නිවන් මාර්ගයට පමුණුවන පළමු පියවර ශ්‍රද්ධාවයි.\nඉහත සඳහන් ප්‍රකාශ අතුරෙන් බුදු දහමේ උගන්වන ශ්‍රද්ධාවට අනුකූල වන කරුණු පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "ABCD",
+          "ABCE",
+          "ABDE",
+          "ACDE",
+          "BCDE"
+        ],
+        correct: 4,
+        explanation: "ශ්‍රද්ධාව ආර්ය අෂ්ටාංගික මාර්ගයේ අංගයක් නොවේ (A); ආලවක සූත්‍රයේ 'සද්ධා ඉධ විත්තං පුරිසස්ස සෙට්ඨං' යනුවෙන් ශ්‍රද්ධාව ශ්‍රේෂ්ඨ ධනය ලෙස දක්වා ඇත (C); ශ්‍රද්ධාව නිර්වාණ මාර්ගයේ බීජයයි (D); ධර්ම ශ්‍රවණයට යොමු කරන මූලික පියවරයි (E). අවබෝධයෙන් ඇතිවන පැහැදීම 'ආකාරවතී ශ්‍රද්ධා' මිස 'අමූලිකා ශ්‍රද්ධා' නොවේ (B වැරදිය)."
+      },
+      {
+        id: 21,
+        question: "සතර බ්‍රහ්ම විහරණවල 'මුදිතා' යන්නෙන් අදහස් කරනුයේ",
+        options: [
+          "මෘදු මොළොක් පැවතුම් ඇති බවයි.",
+          "අන් අයගේ අදහස් වලට ඇහුම්කන්දීමයි.",
+          "නම්‍යශීලීව කටයුතු කිරීමයි.",
+          "අනුන්ගේ දුකේදී කම්පාවීමයි.",
+          "අනුන්ගේ සැපේදී සතුටු වීමයි."
+        ],
+        correct: 5,
+        explanation: "සතර බ්‍රහ්ම විහරණ වන්නේ මෙත්තා, කරුණා, මුදිතා සහ උපේක්ඛා ය. ඒ අතුරින් 'මුදිතා' යනු අනුන්ගේ සැපත, සමෘද්ධිය හා දියුණුව දැක ඊර්ෂ්‍යාවකින් තොරව සතුටු වීමයි."
+      },
+      {
+        id: 22,
+        question: "පරිසරය හා පරිසර සංරක්ෂණයට අදාළව බෞද්ධ ඉගැන්වීම් වල ඇතුළත් ප්‍රකාශ පහක් පහත දැක්වේ.\nA - \"නො ගිලන් වූ භික්ෂුවක් විසින් ජලයෙහි මළ මූත්‍ර පහකිරීම හෝ කෙළ ගැසීම නො කළ යුතු\" යැයි විනය පිටකයේ සඳහන් වේ.\nB - \"නො ගිලන් වූ භික්ෂුවක් විසින් නිල් තණ මත මළ මුත්‍ර පහකිරීම හෝ කෙළ ගැසීම නො කළ යුතු” යැයි සේඛියාවල සඳහන් වේ.\nC - උද්‍යාන ඉදිකිරීම, රුක්රෝපණය, පැන් හල්, පැන් පොකුණු ඉදිකිරීම ආදිය දිවා රෑ පිං වැඩෙන පිංකම් ලෙස වන රෝප සූත්‍රයේ දක්වා ඇත.\nD - පාලකයන් අධාර්මික වන කල්හි ඉර හඳ තාරකා ආදි පාරිසරික තත්ත්වයන් ද වෙනස් ව කලට වැසි වැසීම ආදිය ද සිදු නොවී රට නිසරු වන බව අධම්මික සූත්‍රයේ දැක්වේ.\nE - ගස්වැල් සිඳීම හා සියලු ආකාරයේ බීජ සිඳීම භික්ෂූන්ට ආපත්තියක් ලෙස පාචිත්තිය පාලියෙහි දැක් වේ.\nඉහත සඳහන් ප්‍රකාශ අතුරෙන් පාරිසරික පවිත්‍රතාව හා පරිසර සංරක්ෂණයට ඍජුව අදාළ නො වන බෞද්ධ ඉගැන්වීම ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        correct: 4,
+        explanation: "A, B, C සහ E යන සියල්ල භෞතික පරිසර පවිත්‍රතාව, ජල/තෘණ/ශාක සංරක්ෂණය හා රුක්රෝපණයට ඍජුව සම්බන්ධ වේ. D හි දැක්වෙන පාලකයන්ගේ අධාර්මිකභාවය නිසා සිදුවන පාරිසරික විපර්යාස පිළිබඳ විස්තරය ප්‍රධාන වශයෙන් අංගුත්තර නිකායේ 'අධම්මික සූත්‍රය' ලෙස හඳුන්වන සූත්‍රයට අදාළ නොවන/ප්‍රශ්නයේ සඳහන් පරිදි ඍජුව පාරිසරික පවිත්‍රතා විනය/ක්‍රියාමාර්ගයකට වඩා පාලන සදාචාරය හා සම්බන්ධ වේ."
+      },
+      {
+        id: 23,
+        question: "කාමභෝගී ගිහියාට දරිද්‍රතාව දුකක් බවත් දිළිඳුභාවය නිසා ණය ගැනීමට සිදුවන බවත් ණය ගැනීමට සාපේක්ෂව එකිනෙක බද්ධ වූ තවත් දුක් ගණනාවකට මුහුණදීමට සිදුවන බවත් දැක්වෙන සූත්‍රය කුමක්ද ?",
+        options: [
+          "අනණ සූත්‍රය",
+          "පරාභව සූත්‍රය",
+          "සිගාලෝවාද සූත්‍රය",
+          "පත්තකම්ම සූත්‍රය",
+          "ඉණ සූත්‍රය"
+        ],
+        correct: 5,
+        explanation: "අංගුත්තර නිකායේ ඡක්ක නිපාතයේ 'ඉණ සූත්‍රයේ' (ණය සූත්‍රයේ) කාමභෝගී ගිහියාට දරිද්‍රතාව දුකක් බවත්, ණය වීම, පොලී ගෙවීම, ණය ගෙවීමට නොහැකි වීමෙන් සිරවීම හෝ දඬුවම් ලැබීම ආදී බැඳුණු දුක් පෙළක් විස්තර කෙරේ."
+      },
+      {
+        id: 24,
+        question: "වෙළඳාම ධාර්මික ජීවන වෘත්තියක් ලෙස බුදුසමය අනුමත කරයි. ඒ අනුව ව්‍යවසායකයකු හෝ ව්‍යාපාරිකයකු හෝ විසින් සිදු නොකළ යුතු අධාර්මික හා සාහසික වෙළඳාම් හා ක්‍රියාකාරකම් පිළිබඳව අංගුත්තර නිකායේ, පඤ්චක නිපාතයේ විස්තර කොට ඇත. එහි ඇතුළත් නො වන වෙළඳාම කුමක්ද?",
+        options: [
+          "සත්ථ වණිජ්ජා",
+          "සත්ත වණිජ්ජා",
+          "කූට වණිජ්ජා",
+          "මජ්ජ වණිජ්ජා",
+          "විස වණිජ්ජා"
+        ],
+        correct: 3,
+        explanation: "අංගුත්තර නිකායේ පඤ්චක නිපාතයේ 'වණිජ්ජා සූත්‍රයේ' ගිහියන් නොකළ යුතු වෙළඳාම් පහ නම්: 1. සත්ථ වණිජ්ජා (ආයුධ), 2. සත්ත වණිජ්ජා (සතුන්/මිනිසුන් වෙළඳාම), 3. මංස වණිජ්ජා (මස්), 4. මජ්ජ වණිජ්ජා (මත්පැන්), 5. විස වණිජ්ජා (වස/විස). 'කූට වණිජ්ජා' (වංචනික වෙළඳාම) එම පහට අයත් නොවේ."
+      },
+      {
+        id: 25,
+        question: "ගෘහස්ථ ජීවිතයේ අභිවෘද්ධියට හේතු වන සාධක කිහිපයක් පහත දැක් වේ.\nA - දිරා විනාශ වූ සම්පත් ප්‍රතිසංස්කරණය කිරීම\nB - ප්‍රමාණය දැන පරිභෝජනය කිරීම\nC - නැසුණු සම්පත් උපයා ගැනීම\nD - සිල්වත් ස්ත්‍රියක හෝ පුරුෂයකු අධිපතිත්වයෙහි තබාගැනීම\nE - සැහැල්ලු දිවි පෙවෙතක් පවත්වාගෙන යාම\nඉහත සඳහන් ප්‍රකාශ අතුරෙන් අංගුත්තර නිකායේ කුල සූත්‍රයේ දැක්වෙන භෞතික සම්පත් කළමනා කරණයෙහිලා උපයෝගී කර ගත හැකි කරුණු හතර ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "ABCD",
+          "ABCE",
+          "ABDE",
+          "ACDE",
+          "BCDE"
+        ],
+        correct: 1,
+        explanation: "කුල සූත්‍රයේ පවුලක/කුලයක චිරස්ථිතිය සඳහා දැක්වෙන කරුණු අතර නැසුණු සම්පත් සෙවීම (C), දිරා ගිය දෑ ප්‍රතිසංස්කරණය කිරීම (A), ප්‍රමාණය දැන පරිභෝජනය (B) සහ සිල්වත් අයකු අධිපතිත්වයෙහි තැබීම (D) ප්‍රධාන වේ."
+      },
+      {
+        id: 26,
+        question: "'සන්දිට්ඨිකා ධනජානි\" යනු ඇස් පනාපිට ම වේගයෙන් ධනය නැති වී යාමයි. මෙසේ සාංදෘෂ්ටිකව ධනය ක්ෂය වී යන දොරටු දෙකක් සිගාලෝවාද සූත්‍රාගත සය වැදෑරුම් අපාය මුඛ හෙවත් භෝග විනාශ වීමේ දොරටු පිළිබඳ විග්‍රහය තුළ අන්තර්ගත වේ. ඉන් එකක් සූදුවට ඇබ්බැහි වීමයි. අනෙක් කරුණ වන්නේ",
+        options: [
+          "පාප මිත්‍ර සේවනයයි.",
+          "නොකල් වීථි සංචාරයයි.",
+          "සුරාවට ඇබ්බැහි වීමයි.",
+          "අලසකමයි.",
+          "නිතර උත්සව සංදර්ශන ආදියෙහි යෙදීමයි."
+        ],
+        correct: 3,
+        explanation: "සිගාලෝවාද සූත්‍රයේ සය වැදෑරුම් භෝග විනාශ වීමේ දොරටු (අපාය මුඛ) අතුරින් 'සන්දිට්ඨිකා ධනජානි' (ඇස් පනාපිට ධනය නැති වීම) සිදුවන්නේ සුරාපානය (සුරාවට ඇබ්බැහි වීම) සහ සූදුව යන කරුණු දෙකෙනි."
+      },
+      {
+        id: 27,
+        question: "මංගල සූත්‍රයේ දැක්වෙන පරිදි පුද්ගලයාගේ දෙලොව දියුණුවට හේතු වන මංගල කරුණු වලට ඇතුළත් නො වන්නේ",
+        options: [
+          "පමණ දැන ආහාර ගැනීමයි.",
+          "පෙර කළ පින් ඇති බවයි.",
+          "ලද දෙයින් සතුටුවීමයි.",
+          "ශෝක නො කිරීමයි.",
+          "ඉවසීමයි."
+        ],
+        correct: 2,
+        explanation: "මංගල සූත්‍රයේ 'පුබ්බේ ච කත පුඤ්ඤතා' (පෙර කළ පින් ඇති බව) යන්න සඳහන් වුවද, එය පුද්ගලයාගේ ක්‍රියාකාරී මංගල කරුණක් ලෙස නොව මූලික තත්ත්වයක් ලෙස දැක්වෙන අතර, අනෙක් සියල්ල (භෝජනේ මත්තඤ්ඤුතා, සන්තුට්ඨි, අසෝකං, ඛන්ති) සෘජු මංගල කරුණු ලෙස දක්වා ඇත."
+      },
+      {
+        id: 28,
+        question: "\"මනසා චෙ පදුට්ඨෙන - භාසති වා කරොති වා\" යනාදී ධම්මපද ගාථාවේ දැක්වෙන පරිදි දූෂිත වූ මනසින් කියන - කරන ක්‍රියාවල විපාක එම පාපක්‍රියා කරන්නා වෙත පැමිණෙන ආකාරය දක්වා ඇත්තේ",
+        options: [
+          "\"අළු යට සැඟවුණු ගිනි පුපුරු මෙන් අවස්ථාව එළඹි කල විපාක දෙයි\" යනුවෙනි.",
+          "\"පව් කරනා කලට මධු මෙන් මිහිරි වුව ද දුක් විපාක විඳිනා කලට ගිනි මෙන් දැවෙයි” යනුවෙනි.",
+          "\"වහා නො මිදෙන කිරි මෙන් පව ද ක්‍රම ක්‍රමයෙන් මෝරා විපාක දෙයි\" යනුවෙනි.",
+          "\"ගොනු පසුපස එන කරත්ත රෝදය මෙන් පව ද දුක් විපාක ලබා දෙමින් පසුපස එයි\" යනුවෙනි.",
+          "\"අන්තරීක්ෂයෙහි, සමුද්‍රයෙහි, පර්වත ගුහාවෙහි හෝ ලෝකයේ කුමන තැනක සැඟවී සිටියත් පව විපාක දීම වැළැක්විය නො හැකි ය\" යනුවෙනි."
+        ],
+        correct: 4,
+        explanation: "ධම්මපදයේ පළමු ගාථාව වන 'මනොපුබ්බංගමා ධම්මා...' ගාථාවේ දූෂිත සිතින් කතා කරන හෝ ක්‍රියා කරන විට දුක, ගොනු බැඳි කරත්තයේ රෝදය ගවයාගේ පියවර අනුව පසුපස එන්නා සේ (තං දුක්ඛමන්වේති වහටො විය චක්කං) එම පුද්ගලයා පසුපස එන බව දැක්වේ."
+      },
+      {
+        id: 29,
+        question: "බුද්ධ කාලීන ධර්මදූත සේවාවේ මුල් අවධියේදී සිදු වූ ශාසනික සිදුවීම් පහක් පහත දැක්වේ.\nA - නිග්‍රෝධාරාමය පූජා කිරීම\nB - ශාක්‍යයන්ගේ මානය බිඳීම\nC - උපතිස්ස, කෝලිත දෙදෙනා පැවිදි කිරීම\nD - නන්ද කුමරු පැවිදි කිරීම\nE - වේළුවනාරාමය පූජා කිරීම\nඉහත දැක්වෙන සිදුවීම් අතුරෙන් බුදුරදුන්ගේ කිඹුල්වත්පුර චාරිකාව හා සම්බන්ධ සිදුවීම් පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "ABD",
+          "ACD",
+          "BCD",
+          "BDE",
+          "CDE"
+        ],
+        correct: 1,
+        explanation: "බුදුරජාණන් වහන්සේ කිඹුල්වත්පුරයට වැඩම කළ අවස්ථාවේදී ශාක්‍යයන්ගේ මානය බිඳීම (B), නිග්‍රෝධාරාමය පූජා කිරීම (A) සහ නන්ද කුමරු පැවිදි කිරීම (D) සිදු විය. උපතිස්ස-කෝලිත පැවිද්ද හා වේළුවනාරාම පූජාව රජගහනුවර ආශ්‍රිතව සිදු වූ ඒවාය."
+      },
+      {
+        id: 30,
+        question: "බුදුරජාණන් වහන්සේ විසින් භික්ෂූන්ට දෙන ලද උපදෙස් කිහිපයක් පහත දැක්වේ.\nA - බොහෝ ජනයාගේ හිත සුව පිණිස චාරිකාවේ හැසිරෙන්න.\nB - වැසි සමයෙහි චාරිකාවේ නො යෙදෙන්න.\nC - පිණ්ඩපාතික ආහාරයෙන් යැපෙන්න.\nD - පිරිසිදු බ්‍රහ්මචරියාව ප්‍රකාශ කරන්න.\nE - මුල, මැද සහ අග යහපත් ධර්මය දේශනා කරන්න.\nඉහත සඳහන් ප්‍රකාශ අතුරෙන් ප්‍රථම ධර්ම දූත කණ්ඩායම අමතා බුදුරදුන් විසින් සිදු කරන ලද \"චරථ භික්ඛවෙ චාරිකං\" ආදී උපදේශයෙහි ඇතුළත් නො වන අදහස් දෙක සහිත වරණය තෝරන්න.",
+        options: [
+          "AB",
+          "AC",
+          "BD",
+          "CD",
+          "DE"
+        ],
+        correct: 3,
+        explanation: "'චරථ භික්ඛවෙ චාරිකං...' ධර්මදූත අනුශාසනාවේ බහුජන හිතාය සුඛාය චාරිකාවේ යාම (A), මුල-මැද-අග යහපත් දහම් දෙසීම (E) සහ පිරිසිදු බ්‍රහ්මචරියාව ප්‍රකාශ කිරීම (D) ඇතුළත් වේ. 'වැසි සමයෙහි චාරිකාවේ නොයෙදෙන්න' (B) යන්න පසුව වස් එළඹීමේ විනය සිකපද පැනවීමේදී ඇති වූවකි; 'පිණ්ඩපාතික ආහාරයෙන් යැපෙන්න' (C) යන්න නිස්සය/ප්‍රත්‍ය විග්‍රහයකි."
+      },
+      {
+        id: 31,
+        question: "දෙවන ධර්ම සංගායනාවට අදාළ කරුණු පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "දස වස්තුව, සබ්බකාමී, කාලාශෝක, වාලුකාරාමය, නිකාය භේදය",
+          "දස වස්තුව, යස, කාලාශෝක, සප්තපර්ණි ගුහා මණ්ඩපය, නිකාය භේදය",
+          "දස වස්තුව, සබ්බකාමී, ධර්මාශෝක, අශෝකාරාමය, නිකාය භේදය",
+          "දස වස්තුව, රේවත, කාලාශෝක, අශෝකාරාමය, නිකාය භේදය",
+          "දස වස්තුව, යස, අජාසත්ත, වාලුකාරාමය, නිකාය භේදය"
+        ],
+        correct: 1,
+        explanation: "දෙවන ධර්ම සංගායනාව (බු.ව. 100 දී පමණ) වජ්ජිපුත්තක භික්ෂූන්ගේ 'දස වස්තුව' මුල් කරගෙන විශාලාවේ වාලුකාරාමයේදී කාලාශෝක රජුගේ අනුග්‍රහයෙන් පැවැත්විණි. සබ්බකාමී, රේවත, යස තෙරවරුන් එහි මූලික වූ අතර පසුකාලීනව නිකාය භේදයට ද එය පසුබිම් විය."
+      },
+      {
+        id: 32,
+        question: "පැරණි භාරතීය සුප්‍රකට විශ්ව විද්‍යාල සියල්ලෙහි ම පාහේ ඉතා දියුණු පුස්තකාල සේවාවක් පවත්වා ගෙන ගිය බව ඓතිහාසික හා පුරාවිද්‍යාත්මක සාධක මගින් තහවුරු වේ. ඒ අතර නාලන්දා ආදී අනෙකුත් විශ්ව විද්‍යාලවලට සාපේක්ෂව වලහි විශ්ව විද්‍යාල පුස්තකාලයේ සුවිශේෂ ලක්ෂණයක් පිළිබඳ එම වාර්තාවල දැක්වේ. එම සුවිශේෂිතාව වූයේ",
+        options: [
+          "මන්දිර තුනකින් යුතු පුස්තකාලයක් පවත්වා ගෙන යාමයි.",
+          "මහල් නවයකින් යුතු පුස්තකාල ගොඩනැගිල්ලක් පැවතීමයි.",
+          "මුදල් ගෙවා පුස්තකාලයෙන් බැහැරට පොත් ගෙන යාමට අවසර ලබා දී තිබීමයි.",
+          "'ද්වාර පණ්ඩිත' නමින් පුස්තකාලය භාර නිලධාරියකු පත්කොට තිබීමයි.",
+          "පුස්තකාලය පවත්වා ගෙන යාම සඳහා අරමුදලක් පිහිටුවා තිබීමයි."
+        ],
+        correct: 5,
+        explanation: "පැරණි භාරතීය අධ්‍යාපන ආයතන අතර වලහි (වලභි) විශ්ව විද්‍යාල පුස්තකාලය පවත්වා ගෙන යාම සඳහා විශේෂ අරමුදලක් (පරිත්‍යාග/ධන ආධාර) පිහිටුවා තිබූ බව සඳහන් වේ (නාලන්දාවේ රත්නසාගර, රත්නරංජක, රත්නෝදධි යන මන්දිර තුන පැවතිණි)."
+      },
+      {
+        id: 33,
+        question: "ධර්මාශෝක රජතුමා විසින් සිදු කරන ලද ශාසනික සේවාවක් වූයේ",
+        options: [
+          "බුද්ධ ප්‍රතිමා නිර්මාණයෙහිලා පුරෝගාමීව කටයුතු කිරීමයි.",
+          "දේශීය හා ජාත්‍යන්තර වශයෙන් ධර්ම ප්‍රචාරක සේවාවක් ආරම්භ කිරීමයි.",
+          "විශ්ව කීර්තියට පත් නාගාර්ජුන, අශ්වඝෝෂ වැනි පඬිවරුන්ට සිය රාජ්‍ය සභාවේ උපදේශක තනතුරු ප්‍රදානය කිරීමයි.",
+          "සිවුවන ධර්ම සංගායනාව පිණිස රාජානුග්‍රහය ලබාදීමයි.",
+          "ත්‍රිපිටකයට අටුවා ග්‍රන්ථ සම්පාදනයෙහිලා භික්ෂූන් දිරිගන්වමින් අනුග්‍රහය දැක්වීමයි."
+        ],
+        correct: 2,
+        explanation: "ධර්මාශෝක රජතුමා තෙවන ධර්ම සංගායනාවෙන් පසු මිහිඳු මාහිමියන් ඇතුළු ධර්මදූතයන් නව දෙනෙකු භාරතයේ විවිධ ප්‍රදේශවලටත්, ශ්‍රී ලංකාවටත් යවමින් ජාත්‍යන්තර ධර්ම ප්‍රචාරක සේවාවක් ආරම්භ කළේය. (නාගාර්ජුන/අශ්වඝෝෂ හා සිවුවන සංගායනාව කනිෂ්ක යුගයට අයත්ය)."
+      },
+      {
+        id: 34,
+        question: "ප්‍රාග් බෞද්ධ යුගයේ ලක්දිව පැවති ස්වදේශික ඇදහිලි හා විශ්වාස අතර යක්ෂ වන්දනය ප්‍රමුඛ වූ බව මහාවංසාදී වාර්තා වලින් පැහැදිලි වේ. එකී වාර්තාවලට අනුව පණ්ඩුකාභය රාජ්‍ය පාලන සමය වනවිට වන්දනීයත්වයට පත්ව සිටි යක්ෂ යක්ෂණීන්ගේ නම් පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "කාලවේල, කුම්භණ්ඩ, චිත්තරාජ",
+          "කාලවේල, චිත්තරාජ, මහේජ",
+          "චිත්තරාජ, කාලවේල, විභීෂණ",
+          "චිත්තරාජ, සුමන, කාලවේල",
+          "ජෝතිය, චිත්තරාජ, ජුතින්ධර"
+        ],
+        correct: 2,
+        explanation: "මහාවංසයේ 10 වන පරිච්ඡේදයට අනුව පණ්ඩුකාභය රජු අනුරාධපුර නගර සැලැස්මේදී චිත්තරාජ, කාලවේල සහ මහේජ යන යක්ෂයන්ට ද, වළවාමුඛී යක්ෂණියට ද වාසස්ථාන හා පුද පූජා සලසා දුන්නේය."
+      },
+      {
+        id: 35,
+        question: "බුදුරජාණන් වහන්සේ තෙවරක් ලක්දිවට වැඩම කළ බව මහාවංසයේ සඳහන් වේ. මහාවංසය වාර්තා කරන පරිදි උන්වහන්සේගේ ප්‍රථම ලංකා ගමනයේදී කේශ ධාතු ලබාගෙන ලංකා භූමිය තුළ ස්තූපයක් ඉදි කරන ලද්දේ කවුරුන් විසින් ද?",
+        options: [
+          "තපස්සු භල්ලුක වෙළඳ දෙබෑයන්",
+          "චූලෝදර මහෝදර නා රජුන්",
+          "මණිඅක්ඛික නා රජු",
+          "උපුල්වන් දෙවියන්",
+          "සුමන සමන් දෙවියන්"
+        ],
+        correct: 5,
+        explanation: "මහාවංසයට අනුව බුදුරජාණන් වහන්සේගේ ප්‍රථම ලංකා ගමනයේදී (මහියංගණයට වැඩම කළ අවස්ථාවේ) සුමන සමන් දෙවියන්ට කේශ ධාතු ලබා දුන් අතර, එම කේශ ධාතු නිධන් කොට සුමන සමන් දෙවියන් විසින් මහියංගණ ස්තූපය ඉදි කළ බව සඳහන් වේ."
+      },
+      {
+        id: 36,
+        question: "ප්‍රාග් බෞද්ධ ලක්දිව පැවති ඇදහිලි හා විශ්වාස මහින්දාගමනයෙන් පසු බෞද්ධ ආභාසයෙන් හැඩ ගැසුණු බව පිළිගත් ප්‍රකට අදහසකි. පහත සඳහන් ප්‍රකාශ අතුරෙන් එම අදහස හා නො ගැළපෙන ප්‍රකාශය තෝරන්න.",
+        options: [
+          "වෘක්ෂ වන්දනාව වෙනුවට බුදුරදුන්ගේ පාරිභෝගික චෛත්‍යයක් ලෙස බෝධි වන්දනාවට හුරු විය.",
+          "දේව වන්දනය වෙනුවට දෙවියන්ට පින් දීමේ චාරිත්‍රය ආරම්භ විය.",
+          "පර්වත වන්දනාව වෙනුවට පර්වතවල විහාරාරාම ඉදිකිරීමට පෙළඹිණි.",
+          "යාගය වෙනුවට දානය හඳුන්වා දෙන ලදී.",
+          "මළවුන් පිදීම වෙනුවට මියගිය ඥාතීන්ට පින් දීමේ චාරිත්‍රය සිදු කෙරිණි."
+        ],
+        correct: 3,
+        explanation: "පර්වත වන්දනාව පැවති පරිසරයේ පර්වත/ලෙන් ආශ්‍රිතව විහාරාරාම ඇති වීම සිදු වුවද, 'පර්වත වන්දනාව වෙනුවට පර්වතවල විහාරාරාම ඉදිකිරීමට පෙළඹිණි' යන්න පරිවර්තන ක්‍රියාවලියේ අනෙකුත් සෘජු ආදේශන (වෘක්ෂ->බෝධි, දේව වන්දනා->පින් දීම, යාග->දාන, මළවුන් පිදීම->පින් දීම) හා සසඳන විට එම අදහසට නොගැළපෙන ප්‍රකාශය ලෙස දක්වා ඇත."
+      },
+      {
+        id: 37,
+        question: "ගුත්තවංක යනු",
+        options: [
+          "පුරාණ ශ්‍රී ලාංකේය බෞද්ධ පාලකයෙකි.",
+          "පැරණි භාරතීය බෞද්ධ රජ කෙනෙකි.",
+          "අභයගිරි විහාරයට අයත් පිරිවෙණකි.",
+          "මහා විහාරයට අයත් පිරිවෙණකි.",
+          "චීනයට ගිය භාරතීය භික්ෂුවකි."
+        ],
+        correct: 4,
+        explanation: "මහාවංසය හා ඓතිහාසික මූලාශ්‍රවල සඳහන් පරිදි ගුත්තවංක (ගුත්තවංක පිරිවෙන) යනු මහා විහාරයට අයත් පුරාණ අධ්‍යාපන ආයතනයක්/පිරිවෙණකි."
+      },
+      {
+        id: 38,
+        question: "පුරාණ ශ්‍රී ලාංකේය ජන ජීවිතයෙහි දරුවා මවුකුස පිළිසිඳ ගැනීමේ සිට මරණය දක්වා සෑම වැදගත් කටයුත්තක් ම පාහේ බෞද්ධ චාරිත්‍රානුකූලව සිදුකිරීම පිළිගත් පිළිවෙතකි. ඒ අනුව 'දොරට වැඩීම' යනුවෙන් හඳුන්වන ලද චාරිත‍්‍රයෙන් අදහස් වූයේ",
+        options: [
+          "කුස තුළ සිටින දරුවාගේ ආරක්ෂාව වෙනුවෙන් ගැබ් පෙළහර ආරම්භ කිරීමයි.",
+          "උපත ලැබීමෙන් පසු දරුවා සිය නිවසට කැඳවාගෙන ඒමයි.",
+          "දරුවා විහාරස්ථානයට පළමුවරට කැඳවාගෙන ගොස් පිරිත් සජ්ඣායනා කරවා ගැනීමයි.",
+          "සුභ නැකතකින් දරුවාට ආහාර අනුභවය ආරම්භ කිරීමයි.",
+          "දරුවාට ආශිර්වාද කිරීම සඳහා භික්ෂූන් වහන්සේ නමක් නිවසට වඩම්මවා ගැනීමයි."
+        ],
+        correct: 3,
+        explanation: "ශ්‍රී ලාංකේය ජීවන චක්‍ර චාරිත්‍රවලදී දරුවා උපත ලැබූ පසු පළමුවරට විහාරස්ථානයට (බෝධිය/චෛත්‍යය/විහාරය වෙත) කැඳවාගෙන ගොස් ආශිර්වාද ලබා ගැනීම 'දොරට වැඩීම' ලෙස හැඳින්වේ."
+      },
+      {
+        id: 39,
+        question: "අතීත ශ්‍රී ලාංකේය රජවරුන් හා බුදු සමය අතර පැවතුණ සමීප සබඳතා තහවුරු කරන සාධක පහක් පහත දැක් වේ.\nA - බුදු සමය වැළඳ ගත් පළමු ශ්‍රී ලාංකේය පාලකයා විය.\nB - මහාවිහාරය පිහිටුවා බුදු සසුනට පූජා කළේ ය.\nC - බුදුරජාණන් වහන්සේගේ දකුණු අකු ධාතුව තැන්පත් කොට ථූපාරාම ස්තූපය ඉදි කළේ ය.\nD - මහාථූපය, ලෝවාමහාපාය ආදී යෝධ බෞද්ධ නිර්මාණ ගොඩනැගී ය.\nE - රාජානුග්‍රහය යටතේ ශ්‍රී ලංකා භූමිය තුළ විනය සංගායනාවක් පැවැත්වී ය.\nඉහත දැක්වෙන සිදුවීම් අතුරෙන් දේවානම් පියතිස්ස රජතුමා විසින් සිදුකරන ලද ක්‍රියා පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "ABCD",
+          "ABCE",
+          "ABDE",
+          "ACDE",
+          "BCDE"
+        ],
+        correct: 1,
+        explanation: "දේවානම්පියතිස්ස රජතුමා බුදුසමය වැළඳගත් පළමු පාලකයා වූ අතර (A), මහාවිහාරය පිහිටුවීම (B), දකුණු අකු ධාතුව නිධන් කර ථූපාරාමය ඉදිකිරීම (C) සහ මහා විහාරය ආශ්‍රිත මූලික ඉදිකිරීම් (D) සිදු කළේය. (මහාථූපය හා ලෝවාමහාපාය දුටුගැමුණු රජුගේ නිර්මාණ වන අතර මෙහි වරණය A, B, C, D ලෙස දක්වා ඇත)."
+      },
+      {
+        id: 40,
+        question: "බුරුමයට බුදු දහම හඳුන්වාදීමෙන් පසු එරට සංස්කෘතිය විවිධ අංශවලින් සෘජු පරිවර්තනයකට ලක්විය. පහත දැක්වෙන කරුණු අතුරෙන් එසේ ඍජු පරිවර්තනයකට ලක් නොවූ කරුණ කුමක්ද?",
+        options: [
+          "බෝධිසත්ත්ව සංකල්පය ජනකාන්ත ඇදහිල්ලක් බවට පත්වීම",
+          "කුල භේදය නො සලකන බෞද්ධ රාජ්‍යයක් බවට පත්වීම",
+          "කාන්තාවට අසීමිත නිදහසක් හිමිවීම",
+          "බුදු දහම රාජ්‍ය ආගම බවට පත්වීම",
+          "විහාරස්ථානය දරුවන්ගේ මූලික අධ්‍යාපන මධ්‍යස්ථානය බවට පත්වීම"
+        ],
+        correct: 1,
+        explanation: "බුරුමයේ (මියන්මාරයේ) ප්‍රධාන වශයෙන් පැවතියේ ථේරවාද බුදුදහම වන අතර, එහිදී බුදුදහම රාජ්‍ය ආගම වීම, කුල භේද නොසැලකීම, විහාරස්ථාන අධ්‍යාපනය (මොන්කි පාසල්) සහ කාන්තාවට සාපේක්ෂ නිදහසක් ලැබීම දක්නට ලැබුණි. මහායාන බෝධිසත්ත්ව සංකල්පය ප්‍රමුඛ ජනකාන්ත ඇදහිල්ලක් ලෙස එහි සෘජු පරිවර්තනයක් ලෙස නොසැලකේ."
+      },
+      {
+        id: 41,
+        question: "1361 දී සියම් භික්ෂු පිරිසක් ශ්‍රී ලංකාව වෙත පිටත් කර එවා මෙරටදී බුදු දහම මැනවින් උගන්වා නැවත සිය රටට ගෙන්වා ගෙන එරට බුදු සසුනෙහි අභිවෘද්ධියට හා පෝෂණයට කටයුතු කළ සියම් රජතුමා කවුරුන්ද?",
+        options: [
+          "ධර්ම රාජ රජතුමා",
+          "පළමුවන පරමරාජ රජතුමා",
+          "රෝචරාජ රජතුමා",
+          "ශ්‍රී සූර්යවංශ රාමමහා ධාර්මික රජතුමා",
+          "කිලනා රජතුමා"
+        ],
+        correct: 4,
+        explanation: "ක්‍රි.ව. 1361 දී සුඛෝදය රාජධානියේ පාලනය කළ ශ්‍රී සූර්යවංශ රාමමහා ධාර්මික රජතුමා (මහාධර්මරාජ ලිථෙයි) උදුම්බරාගිරි මහා විහාරයෙන් (දඹදෙණිය/ගම්පළ සමයේ) වැඩම කළ ශ්‍රී ලාංකේය මහ තෙරනමක් වූ සුමන හිමියන්ගේ මඟපෙන්වීම යටතේ සියම් භික්ෂූන්ට ථේරවාද ධර්ම විනය ඉගැන්වීමට පියවර ගත්තේය."
+      },
+      {
+        id: 42,
+        question: "චීන බුදුසමයේ ප්‍රගමනයට සුවිසල් මෙහෙවරක් ඉටු කළ කුමාරජීව හිමියන් විසින් සිදු කරන ලද ශාසනික ධර්ම ශාස්ත්‍රීය සේවාවක් වන්නේ මින් කුමක් ද?",
+        options: [
+          "භාරතයේ සිට චීනයට පැමිණ සෙන් (Zen) සම්ප්‍රදාය ආරම්භ කිරීම",
+          "දේවාසාරා භික්ෂුණිය ගෙන්වාගෙන භික්ෂුණී ශාසනය පිහිටුවීම",
+          "හැන්මිදි රජු ධර්මයේ පහදවාගෙන චීනය තුළ බුදු සමය ව්‍යාප්ත කිරීම",
+          "මහා ප්‍රඥාපාරමිතා ශාස්ත්‍රය, ශත ශාස්ත්‍රය වැනි ග්‍රන්ථ චීන බසට පරිවර්තනය කිරීම",
+          "ඉන්දියාවේ සහ ශ්‍රී ලංකාවේ සංචාරය කොට තමා විසින් ම චීනයට රැගෙන ගිය ග්‍රන්ථ චීන භාෂාවට පරිවර්තනය කිරීම"
+        ],
+        correct: 4,
+        explanation: "කුමාරජීව හිමියන් (ක්‍රි.ව. 344–413) චීනයේ චං-ආන් (Chang'an) නුවර සිට මාධ්‍යමික හා ප්‍රඥාපාරමිතා සම්ප්‍රදායට අයත් 'මහා ප්‍රඥාපාරමිතා ශාස්ත්‍රය' (මහාප්‍රඥාපාරමිතෝපදේශ), 'ශත ශාස්ත්‍රය', 'මාධ්‍යමික ශාස්ත්‍රය' සහ 'සද්ධර්ම පුණ්ඩරීක සූත්‍රය' ඇතුළු විශිෂ්ට ග්‍රන්ථ රැසක් චීන භාෂාවට පරිවර්තනය කළහ."
+      },
+      {
+        id: 43,
+        question: "පහත දැක්වෙන්නේ බුදු දහමේ ආභාසයෙන් ජපන් සංස්කෘතිය තුළ හැඩ ගැසී පෝෂණය වූ ජනප්‍රිය සංස්කෘතිකාංග පහකි.\nA - ඉකෙබනා මල් සැකසුම් කලාව\nB - නෝ, කබුකි නාට්‍ය කලාව\nC - සුමිළු චිත්‍ර කලාව\nD - හයිකු කාව්‍ය කලාව\nE - උද්‍යාන සැකසුම් කලාව\nමේ අතුරෙන් සෙන් (Zen) බුදුසමයේ ආභාසය සහිත සංස්කෘතිකාංග පමණක් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "A",
+          "AB",
+          "ABC",
+          "ABCD",
+          "ABCDE"
+        ],
+        correct: 5,
+        explanation: "ජපානයේ සෙන් (Zen) බුදුදහමේ සරලත්වය, අවධානය සහ ස්වභාවධර්මය සමඟ බැඳුණු සෞන්දර්යය ඉකෙබනා (මල් සැකසුම්), නෝ නාට්‍ය කලාව, සුමි-ඊ/සුමිළු තීන්ත චිත්‍ර කලාව, හයිකු කාව්‍ය කලාව සහ සෙන් උද්‍යාන (Zen rock/moss gardens) සැකසුම් කලාව යන සියල්ල පෝෂණය කිරීමට බලපෑවේය."
+      },
+      {
+        id: 44,
+        question: "බුද්ධ ප්‍රතිමා නිර්මාණය කිරීමේ ඓතිහාසික විකාශය පිළිබඳ පහත සඳහන් ප්‍රකාශ අතුරෙන් නිවැරදි ප්‍රකාශය තෝරන්න.",
+        options: [
+          "ගන්ධාර සහ මථුරා සම්ප්‍රදාය දෙකෙහි ම ආභාසයෙන් දකුණු ඉන්දියාවේ අමරාවතී සම්ප්‍රදාය බිහි විය.",
+          "කොසොල් රජුගේ රුව සහිත කාසිවල බුදුරුව නිරූපණය කර තිබී හමු වී ඇත.",
+          "ගන්ධාර සම්ප්‍රදායට අයත් බුද්ධ ප්‍රතිමා සඳහා දේශීය කලාවේ ආභාසය ලැබී ඇත.",
+          "හිසකේ ශෛලීගතව හා කැරලි ගැසී තිබීම ගන්ධාර ප්‍රතිමා සම්ප්‍රදායේ ලක්ෂණයකි.",
+          "මථුරා සම්ප්‍රදායට අයත් බුද්ධ ප්‍රතිමාවලට ග්‍රීක හා රෝම කලාවේ ආභාසය ලැබී ඇත."
+        ],
+        correct: 4,
+        explanation: "ගන්ධාර බුද්ධ ප්‍රතිමා කලාවේදී හිසකේ රැලි/කැරලි ගැසී ශෛලීගතව නිරූපණය කිරීම දක්නට ලැබෙන අතර, එහි චීවර රැලි ග්‍රීක-රෝම (හෙලනිස්තික) ස්වරූපයක් ගනී. මථුරා කලාව ප්‍රධාන වශයෙන් දේශීය භාරතීය යක්ෂ ප්‍රතිමා සම්ප්‍රදාය මත පදනම් විය."
+      },
+      {
+        id: 45,
+        question: "බුදු පිළිම නෙළීමේ ආරම්භය පිළිබඳ පවත්නා මූලාශ්‍රය සාධක අතුරෙන් ප්‍රථමවරට බුදුරදුන් ජීවමාන කාලයේදී ම සඳුන් ලී අරටුවකින් බුද්ධ ප්‍රතිමාවක් නිමවා වැඳුම් පිදුම් කළ බව සඳහන් වන්නේ",
+        options: [
+          "සමන්තපාසාදිකාවෙහි ය.",
+          "මහාවංසයෙහි ය.",
+          "කෝසලබිම්බ වර්ණනාවෙහි ය.",
+          "මහා පරිනිබ්බාණ සූත්‍රයෙහි ය.",
+          "කාලිංග බෝධි ජාතකයෙහි ය."
+        ],
+        correct: 3,
+        explanation: "කොසොල් රජතුමා බුදුරජාණන් වහන්සේ ජීවමානව සිටියදී උන්වහන්සේගේ රුව සිහිපත් කිරීම පිණිස සඳුන් ලීයෙන් බුද්ධ ප්‍රතිමාවක් (කෝසල බිම්බය) කරවූ බව 'කෝසලබිම්බ වර්ණනාව' නම් ග්‍රන්ථයේ සඳහන් වේ."
+      },
+      {
+        id: 46,
+        question: "අනුරාධපුර යුගයට අයත් අවුකන බුද්ධ ප්‍රතිමාවේ භාවිත මුද්‍රාව හා තොලුවිල බුද්ධ ප්‍රතිමාවේ භාවිත ආසනය පිළිවෙළින් ඇතුළත් වරණය තෝරන්න.",
+        options: [
+          "වරද මුද්‍රාව, වජ්‍රාසනය",
+          "අභය මුද්‍රාව, වීරාසනය",
+          "අභය මුද්‍රාව, පද්මාසනය",
+          "විතර්ක මුද්‍රාව, වීරාසනය",
+          "සමාධි මුද්‍රාව, වජ්‍රාසනය"
+        ],
+        correct: 2,
+        explanation: "අවුකන හිටි බුද්ධ ප්‍රතිමාවේ දකුණු අතින් නිරූපණය වන්නේ 'අභය මුද්‍රාව' (හෝ ආශිර්වාද/අභය ස්වරූපය) වන අතර, තොලුවිල හිඳි බුද්ධ ප්‍රතිමාවේ පාද තබා ඇති ආකාරය 'වීරාසනය' (කකුල් දෙක එක මත එක තබා වාඩි වී සිටින ආසනය) ලෙස හැඳින්වේ."
+      },
+      {
+        id: 47,
+        question: "පුරාණ ශ්‍රී ලාංකේය ගොඩනැගිලි නිර්මාණයේදී භාවිත වැදගත් කලා අංගයක් වූ කොරවක් ගල පිළිබඳ ප්‍රකාශ පහක් පහත දැක්වේ.\nA - රාජකීය හා පූජනීය ගොඩනැගිලි වලට පිවිසීමට ඇති පිටගැට පෙළ දෙපසින් මුරගලට පිටුපසින් කොරවක්ගල පිහිටුවා ඇත.\nB – මුල් යුගයේ කොරවක්ගල කැටයම්වලින් තොරවිය.\nC - අනුරාධපුර යුගයේ දක්නට ලැබෙන කොරවක් ගල්වල ශීර්ෂය මකර මුඛයකින් නිකුත් වන ලියවැලක විලාසය ගෙන ඇත.\nD - කොරවක්ගලේ පිටට පෙනෙන බිත්තියේ සිංහ, හස්ති, වාමන, නාග රූප කැටයම් බොහෝ විට දැකිය හැකි ය.\nE - පොළොන්නරු යුගයෙන් පසුව ගජසිංහ හිස හෝ ඇත් හිස හෝ සිංහ හිස සහිත කොරවක්ගල් දැකිය හැකි ය.\nඉහත සඳහන් ප්‍රකාශ අතුරෙන් කොරවක්ගල හා සම්බන්ධ නිවැරදි ප්‍රකාශ ප්‍රමාණය",
+        options: [
+          "එකකි.",
+          "දෙකකි.",
+          "තුනකි.",
+          "හතරකි.",
+          "පහකි."
+        ],
+        correct: 4,
+        explanation: "පියගැටපෙළ දෙපස මුරගලට පිටුපසින් කොරවක්ගල පිහිටුවීම (A), මුල් යුගයේ සරල/කැටයම් රහිත ස්වරූපය (B), මකර මුඛයෙන් නිකුත් වන ලියවැල් ශීර්ෂය (C) සහ පිටත බිත්තියේ සිංහ/හස්ති/වාමන/නාග රූප (D) යන ප්‍රකාශ හතර නිවැරදි වන අතර, ගජසිංහ/සිංහ/ඇත් හිස් සහිත කොරවක්ගල් පොළොන්නරු යුගයේදී හා ඉන් පසු දක්නට ලැබේ."
+      },
+      {
+        id: 48,
+        question: "මිහිඳු මාහිමියන්ගේ භෂ්මාවශේෂ තැන්පත් කොට අම්බස්ථල ස්තූපය ඉදිකරවන ලද්දේ",
+        options: [
+          "දෙවන පෑතිස් රජතුමා විසින්ය.",
+          "පළමුවන උත්තිය රජතුමා විසින් ය.",
+          "මහාසිව රජතුමා විසින් ය.",
+          "වසභ රජතුමා විසින් ය.",
+          "පළමුවන ගජබාහු රජතුමා විසින්ය."
+        ],
+        correct: 2,
+        explanation: "මිහිඳු මාහිමියන්ගේ ආදාහනයෙන් පසු උන්වහන්සේගේ භෂ්මාවශේෂ නිධන් කොට මිහින්තලයේ අම්බස්ථල චෛත්‍යය (අම්බස්ථල ස්තූපය) ඉදිකරවන ලද්දේ උත්තිය රජතුමා (පළමුවන උත්තිය රජතුමා) විසින් බව මහාවංසයේ සඳහන් වේ."
+      },
+      {
+        id: 49,
+        question: "ගුත්තිල ජාතකය වස්තු විෂය කරගනිමින් කෝට්ටේ යුගයේදී නිර්මාණය කරන ලද සම්භාව්‍ය සිංහල කාව්‍ය ග්‍රන්ථයක් වූ ගුත්තිල කාව්‍යය රචනා කරන ලද්දේ",
+        options: [
+          "බුද්ධපුත්‍ර හිමියන් විසින් ය.",
+          "තොටගමුවේ ශ්‍රී රාහුල හිමියන් විසින් ය.",
+          "ධර්මසේන හිමියන් විසින්ය.",
+          "වීදාගම මෛත්‍රී හිමියන් විසින්ය.",
+          "වෑත්තෑවේ හිමියන් විසින්ය."
+        ],
+        correct: 2,
+        explanation: "ගුත්තිල ජාතක කතාව ඇසුරෙන් කෝට්ටේ යුගයේදී (15 වන සියවසේ) විශිෂ්ට ගණයේ සිංහල කාව්‍යයක් ලෙස 'ගුත්තිල කාව්‍යය' රචනා කරන ලද්දේ වෑත්තෑවේ හිමියන් විසිනි (සමහර සාහිත්‍ය මූලාශ්‍රවල රචකත්වය පිළිබඳ විවිධ මත පැවතියද, සම්මත උසස් පෙළ විෂය නිර්දේශයට අනුව වෑත්තෑවේ හිමියන් ලෙස දැක්වේ)."
+      },
+      {
+        id: 50,
+        question: "බෞද්ධ සංස්කෘතික වටිනාකම් සහිත ස්ථාන පහක් පහත දැක්වේ.\nA - හිඳගල\nB - රුවන්වැලි සෑ ධාතු ගර්භය\nC - තිවංක පිළිමගෙය\nD - කැලණියේ අලුත් විහාරය\nE - බොරැල්ලේ ගෝතමී විහාරය\nඉහත සඳහන් ස්ථාන අතුරෙන් බෞද්ධ සිතුවම් කලාව සඳහා ප්‍රකට ස්ථානය/ස්ථාන ලෙස හඳුනාගෙන ඇත්තේ",
+        options: [
+          "A පමණි.",
+          "A සහ B පමණි.",
+          "A B සහ C පමණි.",
+          "A B C සහ D පමණි.",
+          "A B C D සහ E යන සියල්ල ම ය."
+        ],
+        correct: 4,
+        explanation: "හිඳගල විහාරය (මහනුවර යුගය), තිවංක පිළිමගෙය (පොළොන්නරු යුගය), කැලණියේ අලුත් විහාරය (සෝලියස් මෙන්ඩිස් සිතුවම්) සහ බොරැල්ලේ ගෝතමී විහාරය (ජෝර්ජ් කීට් සිතුවම්) යන සියල්ල බෞද්ධ බිතුසිතුවම් කලාව සඳහා ප්‍රකට ස්ථාන වේ."
+      }
+    ];
+
+    /**
+     * Application State Management
+     */
+    const TOTAL_TIME_SECONDS = 2 * 60 * 60; // 7200 seconds (2 hours)
+
+    const state = {
+      answers: Array(50).fill(null),      // 0..4 index or null
+      flagged: Array(50).fill(false),     // boolean
+      currentIndex: 0,                    // 0..49
+      mode: 'practice',                   // 'practice' | 'exam'
+      viewMode: 'single',                 // 'single' | 'all'
+      timeRemaining: TOTAL_TIME_SECONDS,
+      timerRunning: true,
+      submitted: false,
+      retryIncorrectOnly: false,
+      incorrectIds: [],                   // 0-based indices
+      reviewFilter: 'all',                // 'all' | 'wrong' | 'correct'
+      pendingConfirmAction: null,         // 'clearAll' | 'submitIncomplete' | null
+    };
+
+    let timerInterval = null;
+
+    /**
+     * DOM Element References
+     */
+    const els = {
+      timerDisplay: document.getElementById('timer-display'),
+      timerStatusBadge: document.getElementById('timer-status-badge'),
+      btnToggleTimer: document.getElementById('btn-toggle-timer'),
+      iconPause: document.getElementById('icon-pause'),
+      iconPlay: document.getElementById('icon-play'),
+      labelToggleTimer: document.getElementById('label-toggle-timer'),
+      btnResetTimer: document.getElementById('btn-reset-timer'),
+      btnThemeToggle: document.getElementById('btn-theme-toggle'),
+      iconSun: document.getElementById('icon-sun'),
+      iconMoon: document.getElementById('icon-moon'),
+
+      modePracticeBtn: document.getElementById('mode-practice-btn'),
+      modeExamBtn: document.getElementById('mode-exam-btn'),
+      modeHelperText: document.getElementById('mode-helper-text'),
+      viewSingleBtn: document.getElementById('view-single-btn'),
+      viewAllBtn: document.getElementById('view-all-btn'),
+      btnClearAll: document.getElementById('btn-clear-all'),
+      btnSubmitTest: document.getElementById('btn-submit-test'),
+
+      inlineConfirmBox: document.getElementById('inline-confirm-box'),
+      inlineConfirmMessage: document.getElementById('inline-confirm-message'),
+      inlineConfirmYes: document.getElementById('inline-confirm-yes'),
+      inlineConfirmNo: document.getElementById('inline-confirm-no'),
+
+      toastBanner: document.getElementById('toast-banner'),
+      toastInner: document.getElementById('toast-inner'),
+      toastText: document.getElementById('toast-text'),
+      toastClose: document.getElementById('toast-close'),
+
+      statAnswered: document.getElementById('stat-answered'),
+      statFlagged: document.getElementById('stat-flagged'),
+      progressBarFill: document.getElementById('progress-bar-fill'),
+      retryFilterBanner: document.getElementById('retry-filter-banner'),
+
+      quizWorkspace: document.getElementById('quiz-workspace'),
+      questionsContainer: document.getElementById('questions-container'),
+      questionPalette: document.getElementById('question-palette'),
+      singleNavTop: document.getElementById('single-nav-top'),
+      singleNavBottom: document.getElementById('single-nav-bottom'),
+      currentQIndicator: document.getElementById('current-q-indicator'),
+      btnPrevTop: document.getElementById('btn-prev-top'),
+      btnNextTop: document.getElementById('btn-next-top'),
+      btnPrevBottom: document.getElementById('btn-prev-bottom'),
+      btnNextBottom: document.getElementById('btn-next-bottom'),
+      btnClearCurrent: document.getElementById('btn-clear-current'),
+      btnFlagCurrent: document.getElementById('btn-flag-current'),
+      btnViewScoreShortcut: document.getElementById('btn-view-score-shortcut'),
+
+      resultsSection: document.getElementById('results-section'),
+      resScore: document.getElementById('res-score'),
+      resPercentage: document.getElementById('res-percentage'),
+      resCorrect: document.getElementById('res-correct'),
+      resWrong: document.getElementById('res-wrong'),
+      resTimeTaken: document.getElementById('res-time-taken'),
+      resultGradeRemark: document.getElementById('result-grade-remark'),
+      reviewListContainer: document.getElementById('review-list-container'),
+      btnRetryIncorrect: document.getElementById('btn-retry-incorrect'),
+      btnBackToQuestions: document.getElementById('btn-back-to-questions'),
+      btnRestartAll: document.getElementById('btn-restart-all'),
+      filterReviewAll: document.getElementById('filter-review-all'),
+      filterReviewWrong: document.getElementById('filter-review-wrong'),
+      filterReviewCorrect: document.getElementById('filter-review-correct'),
+    };
+
+    /**
+     * Utility Functions
+     */
+    function formatSecondsToHMS(totalSec) {
+      const safeSec = Math.max(0, Math.floor(totalSec));
+      const hrs = Math.floor(safeSec / 3600);
+      const mins = Math.floor((safeSec % 3600) / 60);
+      const secs = safeSec % 60;
+      return [hrs, mins, secs].map((v) => String(v).padStart(2, '0')).join(':');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function formatQuestionText(text) {
+      return escapeHtml(text).replace(/\n/g, '<br />');
+    }
+
+    function showToast(message, type = 'info') {
+      els.toastText.textContent = message;
+      els.toastInner.className = 'rounded-2xl px-4 py-3 border flex items-center justify-between gap-3 shadow-sm text-xs sm:text-sm font-medium ';
+      if (type === 'success') {
+        els.toastInner.className += 'bg-emerald-50 dark:bg-emerald-950/70 border-emerald-300 dark:border-emerald-700 text-emerald-950 dark:text-emerald-100';
+      } else if (type === 'warn') {
+        els.toastInner.className += 'bg-amber-50 dark:bg-amber-950/70 border-amber-300 dark:border-amber-700 text-amber-950 dark:text-amber-100';
+      } else {
+        els.toastInner.className += 'bg-stone-100 dark:bg-stone-900 border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100';
+      }
+      els.toastBanner.classList.remove('hidden');
+    }
+
+    function hideToast() {
+      els.toastBanner.classList.add('hidden');
+    }
+
+    /**
+     * Theme Handling (Respects system preference + manual toggle)
+     */
+    function initTheme() {
+      const savedTheme = localStorage.getItem('bc2025_theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+      applyTheme(isDark);
+    }
+
+    function applyTheme(isDark) {
+      document.documentElement.classList.toggle('dark', isDark);
+      els.iconSun.classList.toggle('hidden', !isDark);
+      els.iconMoon.classList.toggle('hidden', isDark);
+      localStorage.setItem('bc2025_theme', isDark ? 'dark' : 'light');
+    }
+
+    /**
+     * Countdown Timer Logic
+     */
+    function startTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      state.timerRunning = true;
+      updateTimerUI();
+
+      timerInterval = setInterval(() => {
+        if (!state.timerRunning) return;
+        if (state.timeRemaining > 0) {
+          state.timeRemaining -= 1;
+          updateTimerUI();
+        } else {
+          state.timerRunning = false;
+          clearInterval(timerInterval);
+          updateTimerUI();
+          showToast('පැය දෙකක (මිනිත්තු 120) කාලය අවසන් විය! ප්‍රශ්න පත්‍රය ස්වයංක්‍රීයව භාර දෙන ලදී.', 'warn');
+          finalizeSubmission();
+        }
+      }, 1000);
+    }
+
+    function toggleTimerPause() {
+      state.timerRunning = !state.timerRunning;
+      updateTimerUI();
+    }
+
+    function resetTimer() {
+      state.timeRemaining = TOTAL_TIME_SECONDS;
+      state.timerRunning = true;
+      updateTimerUI();
+      showToast('කාලය නැවත පැය 2:00:00 ලෙස සකසන ලදී.', 'info');
+    }
+
+    function updateTimerUI() {
+      els.timerDisplay.textContent = formatSecondsToHMS(state.timeRemaining);
+      if (state.timerRunning) {
+        els.iconPause.classList.remove('hidden');
+        els.iconPlay.classList.add('hidden');
+        els.labelToggleTimer.textContent = 'නවත්වන්න';
+        els.timerStatusBadge.textContent = 'ක්‍රියාත්මකයි';
+        els.timerStatusBadge.className = 'hidden sm:inline text-[11px] px-1.5 py-0.5 rounded-md bg-emerald-500/25 text-emerald-200 border border-emerald-300/30';
+      } else {
+        els.iconPause.classList.add('hidden');
+        els.iconPlay.classList.remove('hidden');
+        els.labelToggleTimer.textContent = 'නැවත අරඹන්න';
+        els.timerStatusBadge.textContent = 'නවතා ඇත';
+        els.timerStatusBadge.className = 'hidden sm:inline text-[11px] px-1.5 py-0.5 rounded-md bg-amber-500/30 text-amber-100 border border-amber-300/40';
+      }
+    }
+
+    /**
+     * Stats & Progress Bar
+     */
+    function updateStats() {
+      const answeredCount = state.answers.filter((a) => a !== null).length;
+      const flaggedCount = state.flagged.filter(Boolean).length;
+      const pct = Math.round((answeredCount / QUESTIONS_DATA.length) * 100);
+
+      els.statAnswered.textContent = answeredCount;
+      els.statFlagged.textContent = flaggedCount;
+      els.progressBarFill.style.width = `${pct}%`;
+      els.retryFilterBanner.classList.toggle('hidden', !state.retryIncorrectOnly);
+    }
+
+    /**
+     * Visible Question Indices Helper (Supports Retry Incorrect filter)
+     */
+    function getActiveQuestionIndices() {
+      if (state.retryIncorrectOnly && state.incorrectIds.length > 0) {
+        return state.incorrectIds;
+      }
+      return QUESTIONS_DATA.map((_, idx) => idx);
+    }
+
+    /**
+     * Render Question Cards
+     */
+    function renderQuestions() {
+      const activeIndices = getActiveQuestionIndices();
+
+      if (state.viewMode === 'single') {
+        if (!activeIndices.includes(state.currentIndex)) {
+          state.currentIndex = activeIndices[0] ?? 0;
+        }
+        els.singleNavTop.classList.remove('hidden');
+        els.singleNavBottom.classList.remove('hidden');
+
+        const posInActive = activeIndices.indexOf(state.currentIndex);
+        els.currentQIndicator.textContent = state.retryIncorrectOnly
+          ? `වැරදුණු ප්‍රශ්න (${posInActive + 1} / ${activeIndices.length}) • #${state.currentIndex + 1}`
+          : `ප්‍රශ්නය ${state.currentIndex + 1} / 50`;
+
+        els.btnPrevTop.disabled = posInActive <= 0;
+        els.btnPrevBottom.disabled = posInActive <= 0;
+        els.btnNextTop.disabled = posInActive >= activeIndices.length - 1;
+        els.btnNextBottom.disabled = posInActive >= activeIndices.length - 1;
+
+        els.btnFlagCurrent.textContent = state.flagged[state.currentIndex]
+          ? '★ සලකුණ ඉවත් කරන්න'
+          : '☆ සලකුණු කරන්න (Flag)';
+
+        els.questionsContainer.innerHTML = renderSingleQuestionCard(state.currentIndex);
+      } else {
+        els.singleNavTop.classList.add('hidden');
+        els.singleNavBottom.classList.add('hidden');
+        els.questionsContainer.innerHTML = activeIndices
+          .map((qIdx) => renderSingleQuestionCard(qIdx))
+          .join('');
+      }
+
+      bindQuestionCardEvents();
+      updateStats();
+      renderPalette();
+    }
+
+    function renderSingleQuestionCard(qIndex) {
+      const q = QUESTIONS_DATA[qIndex];
+      const selected = state.answers[qIndex];
+      const isFlagged = state.flagged[qIndex];
+      const showInstantFeedback = (state.mode === 'practice' && selected !== null) || state.submitted;
+
+      const optionsHtml = q.options
+        .map((optText, optIdx) => {
+          const isSelected = selected === optIdx;
+          const isCorrectOption = q.correct === optIdx;
+
+          let cardStyle =
+            'border-stone-200 dark:border-stone-700/80 bg-stone-50/60 dark:bg-stone-800/50 hover:border-amber-500 hover:bg-amber-50/60 dark:hover:bg-stone-800';
+          let badgeStyle =
+            'bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-200 border-stone-300 dark:border-stone-600';
+          let statusTag = '';
+
+          if (showInstantFeedback) {
+            if (isCorrectOption) {
+              cardStyle =
+                'border-emerald-500 bg-emerald-50/90 dark:bg-emerald-950/50 ring-1 ring-emerald-500/40';
+              badgeStyle =
+                'bg-emerald-600 text-white border-emerald-600';
+              statusTag =
+                '<span class="ml-auto text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-600 text-white shrink-0">නිවැරදි පිළිතුර</span>';
+            } else if (isSelected && !isCorrectOption) {
+              cardStyle =
+                'border-rose-500 bg-rose-50/90 dark:bg-rose-950/50 ring-1 ring-rose-500/40';
+              badgeStyle =
+                'bg-rose-600 text-white border-rose-600';
+              statusTag =
+                '<span class="ml-auto text-xs font-bold px-2.5 py-0.5 rounded-full bg-rose-600 text-white shrink-0">ඔබේ තේරීම</span>';
+            }
+          } else if (isSelected) {
+            cardStyle =
+              'border-amber-700 bg-amber-50/90 dark:bg-amber-950/40 ring-2 ring-amber-600/30';
+            badgeStyle =
+              'bg-amber-700 text-white border-amber-700';
+          }
+
+          return `
+            <button
+              type="button"
+              data-q-index="${qIndex}"
+              data-opt-index="${optIdx}"
+              class="mcq-option-btn w-full text-left p-3.5 sm:p-4 rounded-2xl border transition flex items-start gap-3.5 group cursor-pointer ${cardStyle}"
+            >
+              <span class="w-7 h-7 rounded-xl border font-bold text-xs sm:text-sm flex items-center justify-center shrink-0 mt-0.5 transition ${badgeStyle}">
+                ${optIdx + 1}
+              </span>
+              <span class="text-sm sm:text-base text-stone-800 dark:text-stone-100 leading-relaxed flex-1">
+                ${escapeHtml(optText)}
+              </span>
+              ${statusTag}
+            </button>
+          `;
+        })
+        .join('');
+
+      let feedbackBlock = '';
+      if (showInstantFeedback) {
+        const isUserRight = selected === q.correct;
+        const headerColor = isUserRight
+          ? 'text-emerald-800 dark:text-emerald-300 bg-emerald-100/70 dark:bg-emerald-900/40 border-emerald-300/70 dark:border-emerald-700/60'
+          : 'text-rose-800 dark:text-rose-200 bg-rose-100/70 dark:bg-rose-900/40 border-rose-300/70 dark:border-rose-700/60';
+
+        const verdictText = selected === null
+          ? `පිළිතුරක් තෝරා නැත • නිවැරදි පිළිතුර: (${q.correct + 1})`
+          : isUserRight
+            ? `නිවැරදියි! (${q.correct + 1}) — ඔබ නිවැරදි පිළිතුර තෝරාගෙන ඇත.`
+            : `වැරදියි! ඔබ (${selected + 1}) තෝරාගත්තද, නිවැරදි පිළිතුර (${q.correct + 1}) වේ.`;
+
+        feedbackBlock = `
+          <div class="mt-5 rounded-2xl border overflow-hidden animate-fade-in ${headerColor}">
+            <div class="px-4 py-2.5 font-bold text-xs sm:text-sm border-b border-current/15">
+              ${verdictText}
+            </div>
+            <div class="p-4 bg-white/85 dark:bg-stone-900/85 text-stone-700 dark:text-stone-200 text-xs sm:text-sm leading-relaxed sinhala-prose">
+              <span class="font-bold text-amber-800 dark:text-amber-300 block mb-1">පැහැදිලි කිරීම:</span>
+              ${escapeHtml(q.explanation)}
+            </div>
+          </div>
+        `;
+      }
+
+      return `
+        <article class="bg-white dark:bg-stone-900 rounded-3xl p-5 sm:p-7 shadow-sm border border-amber-900/10 dark:border-stone-800 animate-fade-in">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div class="flex items-center gap-2.5 flex-wrap">
+              <span class="px-3 py-1 rounded-xl bg-amber-800 text-white font-bold text-xs sm:text-sm shadow-sm">
+                ප්‍රශ්නය ${q.id}
+              </span>
+              ${
+                state.submitted
+                  ? selected === q.correct
+                    ? '<span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-200">✓ නිවැරදි (+1)</span>'
+                    : '<span class="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-200">✕ වැරදි (0)</span>'
+                  : ''
+              }
+            </div>
+
+            <div class="flex items-center gap-2 shrink-0">
+              ${
+                selected !== null && !state.submitted
+                  ? `<button type="button" data-clear-q="${qIndex}" class="text-xs px-2.5 py-1.5 rounded-xl text-stone-500 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition">
+                      මකන්න
+                    </button>`
+                  : ''
+              }
+              <button
+                type="button"
+                data-flag-q="${qIndex}"
+                class="text-xs font-semibold px-3 py-1.5 rounded-xl border transition ${
+                  isFlagged
+                    ? 'bg-amber-400/25 border-amber-500 text-amber-900 dark:text-amber-200'
+                    : 'bg-stone-50 dark:bg-stone-800 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 hover:border-amber-400'
+                }"
+              >
+                ${isFlagged ? '★ සලකුණු කළ' : '☆ Flag'}
+              </button>
+            </div>
+          </div>
+
+          <h3 class="text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-relaxed sinhala-prose mb-5">
+            ${formatQuestionText(q.question)}
+          </h3>
+
+          <div class="space-y-2.5">
+            ${optionsHtml}
+          </div>
+
+          ${feedbackBlock}
+        </article>
+      `;
+    }
+
+    function bindQuestionCardEvents() {
+      document.querySelectorAll('.mcq-option-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const qIdx = Number(btn.dataset.qIndex);
+          const optIdx = Number(btn.dataset.optIndex);
+          selectAnswer(qIdx, optIdx);
+        });
+      });
+
+      document.querySelectorAll('[data-flag-q]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const qIdx = Number(btn.dataset.flagQ);
+          toggleFlag(qIdx);
+        });
+      });
+
+      document.querySelectorAll('[data-clear-q]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const qIdx = Number(btn.dataset.clearQ);
+          clearAnswer(qIdx);
+        });
+      });
+    }
+
+    /**
+     * Render 1–50 Navigation Palette
+     */
+    function renderPalette() {
+      els.questionPalette.innerHTML = QUESTIONS_DATA.map((q, idx) => {
+        const isAnswered = state.answers[idx] !== null;
+        const isFlagged = state.flagged[idx];
+        const isCurrent = state.viewMode === 'single' && state.currentIndex === idx;
+
+        let classes =
+          'h-10 rounded-xl font-bold text-xs sm:text-sm transition flex items-center justify-center relative cursor-pointer select-none ';
+
+        if (state.submitted) {
+          const right = state.answers[idx] === q.correct;
+          classes += right
+            ? 'bg-emerald-600 text-white hover:bg-emerald-700 '
+            : 'bg-rose-600 text-white hover:bg-rose-700 ';
+        } else if (isAnswered) {
+          classes += 'bg-amber-700 text-white hover:bg-amber-800 shadow-xs ';
+        } else {
+          classes +=
+            'bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-200 border border-stone-200 dark:border-stone-700 hover:bg-amber-50 dark:hover:bg-stone-700 ';
+        }
+
+        if (isCurrent) {
+          classes += 'ring-2 ring-offset-2 ring-stone-900 dark:ring-white dark:ring-offset-stone-900 ';
+        } else if (isFlagged) {
+          classes += 'ring-2 ring-amber-400 ';
+        }
+
+        const flagDot = isFlagged
+          ? '<span class="w-2 h-2 rounded-full bg-amber-300 border border-amber-900 absolute -top-0.5 -right-0.5"></span>'
+          : '';
+
+        return `
+          <button type="button" data-palette-idx="${idx}" class="${classes}" title="ප්‍රශ්නය ${q.id}">
+            ${q.id}
+            ${flagDot}
+          </button>
+        `;
+      }).join('');
+
+      els.questionPalette.querySelectorAll('[data-palette-idx]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const idx = Number(btn.dataset.paletteIdx);
+          state.currentIndex = idx;
+          if (state.viewMode === 'single') {
+            renderQuestions();
+            window.scrollTo({ top: 140, behavior: 'smooth' });
+          } else {
+            renderQuestions();
+            const cards = els.questionsContainer.querySelectorAll('article');
+            const targetCard = cards[idx];
+            if (targetCard) {
+              targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
+        });
+      });
+    }
+
+    /**
+     * Answer & Flag Actions
+     */
+    function selectAnswer(qIndex, optIndex) {
+      state.answers[qIndex] = optIndex;
+      renderQuestions();
+    }
+
+    function clearAnswer(qIndex) {
+      state.answers[qIndex] = null;
+      renderQuestions();
+    }
+
+    function toggleFlag(qIndex) {
+      state.flagged[qIndex] = !state.flagged[qIndex];
+      renderQuestions();
+    }
+
+    function goToStep(delta) {
+      const activeIndices = getActiveQuestionIndices();
+      const pos = activeIndices.indexOf(state.currentIndex);
+      const nextPos = pos + delta;
+      if (nextPos >= 0 && nextPos < activeIndices.length) {
+        state.currentIndex = activeIndices[nextPos];
+        renderQuestions();
+      }
+    }
+
+    /**
+     * Mode & View Toggles
+     */
+    function setMode(newMode) {
+      state.mode = newMode;
+      const isPractice = newMode === 'practice';
+
+      els.modePracticeBtn.className = isPractice
+        ? 'px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 bg-amber-700 text-white shadow-sm'
+        : 'px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 text-stone-700 dark:text-stone-300 hover:bg-amber-100/70 dark:hover:bg-stone-700';
+
+      els.modeExamBtn.className = !isPractice
+        ? 'px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 bg-amber-700 text-white shadow-sm'
+        : 'px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 text-stone-700 dark:text-stone-300 hover:bg-amber-100/70 dark:hover:bg-stone-700';
+
+      els.modeHelperText.textContent = isPractice
+        ? 'තෝරාගත් පිළිතුර සඳහා ක්ෂණික නිවැරදි බව සහ පැහැදිලි කිරීම පෙන්වයි.'
+        : 'සැබෑ විභාගයක් මෙන් අවසානයේ භාර දෙන තෙක් පිළිතුරු සඟවා තබයි.';
+
+      renderQuestions();
+    }
+
+    function setViewMode(newView) {
+      state.viewMode = newView;
+      const isSingle = newView === 'single';
+
+      els.viewSingleBtn.className = isSingle
+        ? 'px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition bg-white dark:bg-stone-700 text-amber-800 dark:text-amber-200 shadow-sm'
+        : 'px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white';
+
+      els.viewAllBtn.className = !isSingle
+        ? 'px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition bg-white dark:bg-stone-700 text-amber-800 dark:text-amber-200 shadow-sm'
+        : 'px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium transition text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white';
+
+      renderQuestions();
+    }
+
+    /**
+     * Inline Confirmation Flow (No browser confirm())
+     */
+    function openInlineConfirm(actionType, message) {
+      state.pendingConfirmAction = actionType;
+      els.inlineConfirmMessage.textContent = message;
+      els.inlineConfirmBox.classList.remove('hidden');
+    }
+
+    function closeInlineConfirm() {
+      state.pendingConfirmAction = null;
+      els.inlineConfirmBox.classList.add('hidden');
+    }
+
+    function executeConfirmedAction() {
+      const action = state.pendingConfirmAction;
+      closeInlineConfirm();
+
+      if (action === 'clearAll') {
+        state.answers = Array(50).fill(null);
+        state.flagged = Array(50).fill(false);
+        state.submitted = false;
+        state.retryIncorrectOnly = false;
+        state.incorrectIds = [];
+        state.currentIndex = 0;
+        els.resultsSection.classList.add('hidden');
+        els.btnViewScoreShortcut.classList.add('hidden');
+        renderQuestions();
+        showToast('සියලුම පිළිතුරු සහ සලකුණු ඉවත් කරන ලදී.', 'info');
+      } else if (action === 'submitIncomplete') {
+        finalizeSubmission();
+      }
+    }
+
+    /**
+     * Grading & Results Summary
+     */
+    function requestSubmitTest() {
+      const unansweredCount = state.answers.filter((a) => a === null).length;
+      if (unansweredCount > 0) {
+        openInlineConfirm(
+          'submitIncomplete',
+          `තවමත් පිළිතුරු සපයා නොමැති ප්‍රශ්න ${unansweredCount}ක් ඇත. එසේ තිබියදීත් ප්‍රශ්න පත්‍රය භාර දීමට ඔබට අවශ්‍යද?`
+        );
+      } else {
+        finalizeSubmission();
+      }
+    }
+
+    function finalizeSubmission() {
+      state.submitted = true;
+      state.timerRunning = false;
+      updateTimerUI();
+
+      let correctCount = 0;
+      const wrongIndices = [];
+
+      QUESTIONS_DATA.forEach((q, idx) => {
+        if (state.answers[idx] === q.correct) {
+          correctCount += 1;
+        } else {
+          wrongIndices.push(idx);
+        }
+      });
+
+      const total = QUESTIONS_DATA.length;
+      const wrongCount = total - correctCount;
+      const percentage = ((correctCount / total) * 100).toFixed(1);
+      const timeTakenSec = TOTAL_TIME_SECONDS - state.timeRemaining;
+
+      state.incorrectIds = wrongIndices;
+
+      els.resScore.textContent = `${correctCount} / ${total}`;
+      els.resPercentage.textContent = `${percentage}%`;
+      els.resCorrect.textContent = `${correctCount} නිවැරදි`;
+      els.resWrong.textContent = `${wrongCount} වැරදි`;
+      els.resTimeTaken.textContent = formatSecondsToHMS(timeTakenSec);
+
+      let remark = '';
+      if (correctCount >= 40) {
+        remark = 'විශිෂ්ට සාධනයකි! විෂය කරුණු පිළිබඳ ඉතා හොඳ අවබෝධයක් ඔබ සතුය.';
+      } else if (correctCount >= 30) {
+        remark = 'හොඳ මට්ටමක සිටී! වැරදුණු ප්‍රශ්න සමාලෝචනය කර තවදුරටත් පුහුණු වන්න.';
+      } else if (correctCount >= 20) {
+        remark = 'සාමාන්‍ය ප්‍රතිඵලයකි. පැහැදිලි කිරීම් කියවා විෂය නිර්දේශ කරුණු නැවත පිරික්සන්න.';
+      } else {
+        remark = 'තවදුරටත් පුහුණුව අවශ්‍යයි. පුහුණු මාදිලියෙන් එක් එක් ප්‍රශ්නය සාවධානව අධ්‍යයනය කරන්න.';
+      }
+      els.resultGradeRemark.textContent = remark;
+
+      els.btnRetryIncorrect.classList.toggle('hidden', wrongIndices.length === 0);
+      els.btnViewScoreShortcut.classList.remove('hidden');
+
+      state.reviewFilter = 'all';
+      updateReviewFilterButtons();
+      renderReviewList();
+
+      els.resultsSection.classList.remove('hidden');
+      els.resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      renderQuestions();
+    }
+
+    function updateReviewFilterButtons() {
+      const base = 'px-3 py-1.5 rounded-xl font-semibold transition ';
+      els.filterReviewAll.className = base + (state.reviewFilter === 'all'
+        ? 'bg-amber-800 text-white'
+        : 'bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300');
+      els.filterReviewWrong.className = base + (state.reviewFilter === 'wrong'
+        ? 'bg-rose-700 text-white'
+        : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-200');
+      els.filterReviewCorrect.className = base + (state.reviewFilter === 'correct'
+        ? 'bg-emerald-700 text-white'
+        : 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-200');
+    }
+
+    function renderReviewList() {
+      const items = QUESTIONS_DATA.map((q, idx) => ({ q, idx })).filter(({ q, idx }) => {
+        const isRight = state.answers[idx] === q.correct;
+        if (state.reviewFilter === 'correct') return isRight;
+        if (state.reviewFilter === 'wrong') return !isRight;
+        return true;
+      });
+
+      if (items.length === 0) {
+        els.reviewListContainer.innerHTML = `
+          <div class="p-6 rounded-2xl bg-stone-50 dark:bg-stone-800/50 text-center text-sm text-stone-600 dark:text-stone-300">
+            මෙම පෙරහන යටතේ පෙන්වීමට ප්‍රශ්න නොමැත.
+          </div>
+        `;
+        return;
+      }
+
+      els.reviewListContainer.innerHTML = items.map(({ q, idx }) => {
+        const userAns = state.answers[idx];
+        const isRight = userAns === q.correct;
+        const userAnsLabel = userAns === null
+          ? 'පිළිතුරු සපයා නැත'
+          : `(${userAns + 1}) ${escapeHtml(q.options[userAns])}`;
+        const correctAnsLabel = `(${q.correct + 1}) ${escapeHtml(q.options[q.correct])}`;
+
+        return `
+          <div class="p-4 sm:p-5 rounded-2xl border ${
+            isRight
+              ? 'border-emerald-200 dark:border-emerald-800/60 bg-emerald-50/40 dark:bg-emerald-950/20'
+              : 'border-rose-200 dark:border-rose-800/60 bg-rose-50/40 dark:bg-rose-950/20'
+          }">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="font-bold text-sm text-stone-900 dark:text-white">
+                ප්‍රශ්නය ${q.id}
+              </span>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full ${
+                isRight
+                  ? 'bg-emerald-600 text-white'
+                  : 'bg-rose-600 text-white'
+              }">
+                ${isRight ? 'නිවැරදි' : 'වැරදි'}
+              </span>
+            </div>
+
+            <p class="text-sm sm:text-base font-semibold text-stone-800 dark:text-stone-100 sinhala-prose mb-3">
+              ${formatQuestionText(q.question)}
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs sm:text-sm mb-3">
+              <div class="p-2.5 rounded-xl bg-white/80 dark:bg-stone-900/80 border border-stone-200 dark:border-stone-700">
+                <span class="font-semibold text-stone-500 dark:text-stone-400 block text-xs">ඔබ තෝරාගත් පිළිතුර:</span>
+                <span class="${isRight ? 'text-emerald-700 dark:text-emerald-300 font-semibold' : 'text-rose-700 dark:text-rose-300 font-semibold'}">
+                  ${userAnsLabel}
+                </span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white/80 dark:bg-stone-900/80 border border-emerald-300/70 dark:border-emerald-700/60">
+                <span class="font-semibold text-stone-500 dark:text-stone-400 block text-xs">නිවැරදි පිළිතුර:</span>
+                <span class="text-emerald-800 dark:text-emerald-300 font-bold">
+                  ${correctAnsLabel}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-white/90 dark:bg-stone-900/90 text-xs sm:text-sm text-stone-700 dark:text-stone-200 leading-relaxed sinhala-prose">
+              <span class="font-bold text-amber-800 dark:text-amber-300">පැහැදිලි කිරීම: </span>
+              ${escapeHtml(q.explanation)}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function retryIncorrectQuestions() {
+      if (state.incorrectIds.length === 0) return;
+      state.retryIncorrectOnly = true;
+      state.submitted = false;
+      state.mode = 'practice';
+      setMode('practice');
+      state.currentIndex = state.incorrectIds[0];
+      els.resultsSection.classList.add('hidden');
+      renderQuestions();
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+      showToast(`වැරදුණු ප්‍රශ්න ${state.incorrectIds.length} නැවත පුහුණු වීමට සූදානම්.`, 'info');
+    }
+
+    function restartEntireTest() {
+      state.answers = Array(50).fill(null);
+      state.flagged = Array(50).fill(false);
+      state.currentIndex = 0;
+      state.submitted = false;
+      state.retryIncorrectOnly = false;
+      state.incorrectIds = [];
+      state.timeRemaining = TOTAL_TIME_SECONDS;
+      els.resultsSection.classList.add('hidden');
+      els.btnViewScoreShortcut.classList.add('hidden');
+      startTimer();
+      renderQuestions();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      showToast('ප්‍රශ්න පත්‍රය මුල සිට නැවත ආරම්භ කරන ලදී.', 'success');
+    }
+
+    /**
+     * Event Listeners Registration
+     */
+    function bindEvents() {
+      els.btnToggleTimer.addEventListener('click', toggleTimerPause);
+      els.btnResetTimer.addEventListener('click', resetTimer);
+
+      els.btnThemeToggle.addEventListener('click', () => {
+        const currentlyDark = document.documentElement.classList.contains('dark');
+        applyTheme(!currentlyDark);
+      });
+
+      els.modePracticeBtn.addEventListener('click', () => setMode('practice'));
+      els.modeExamBtn.addEventListener('click', () => setMode('exam'));
+
+      els.viewSingleBtn.addEventListener('click', () => setViewMode('single'));
+      els.viewAllBtn.addEventListener('click', () => setViewMode('all'));
+
+      els.btnClearAll.addEventListener('click', () => {
+        openInlineConfirm(
+          'clearAll',
+          'ඔබ සැපයූ සියලුම පිළිතුරු සහ සලකුණු (Flags) මකා දැමීමට අවශ්‍යද?'
+        );
+      });
+
+      els.inlineConfirmYes.addEventListener('click', executeConfirmedAction);
+      els.inlineConfirmNo.addEventListener('click', closeInlineConfirm);
+      els.toastClose.addEventListener('click', hideToast);
+
+      els.btnSubmitTest.addEventListener('click', requestSubmitTest);
+
+      els.btnPrevTop.addEventListener('click', () => goToStep(-1));
+      els.btnNextTop.addEventListener('click', () => goToStep(1));
+      els.btnPrevBottom.addEventListener('click', () => goToStep(-1));
+      els.btnNextBottom.addEventListener('click', () => goToStep(1));
+
+      els.btnClearCurrent.addEventListener('click', () => clearAnswer(state.currentIndex));
+      els.btnFlagCurrent.addEventListener('click', () => toggleFlag(state.currentIndex));
+
+      els.btnRetryIncorrect.addEventListener('click', retryIncorrectQuestions);
+      els.btnBackToQuestions.addEventListener('click', () => {
+        els.resultsSection.classList.add('hidden');
+        els.quizWorkspace.scrollIntoView({ behavior: 'smooth' });
+      });
+      els.btnRestartAll.addEventListener('click', restartEntireTest);
+
+      els.btnViewScoreShortcut.addEventListener('click', () => {
+        els.resultsSection.classList.remove('hidden');
+        els.resultsSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      els.filterReviewAll.addEventListener('click', () => {
+        state.reviewFilter = 'all';
+        updateReviewFilterButtons();
+        renderReviewList();
+      });
+      els.filterReviewWrong.addEventListener('click', () => {
+        state.reviewFilter = 'wrong';
+        updateReviewFilterButtons();
+        renderReviewList();
+      });
+      els.filterReviewCorrect.addEventListener('click', () => {
+        state.reviewFilter = 'correct';
+        updateReviewFilterButtons();
+        renderReviewList();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener('keydown', (e) => {
+        if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+        if (state.viewMode === 'single' && els.resultsSection.classList.contains('hidden')) {
+          if (e.key === 'ArrowRight') {
+            goToStep(1);
+          } else if (e.key === 'ArrowLeft') {
+            goToStep(-1);
+          } else if (['1', '2', '3', '4', '5'].includes(e.key)) {
+            selectAnswer(state.currentIndex, Number(e.key) - 1);
+          }
+        }
+      });
+    }
+
+    /**
+     * App Initialization
+     */
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      bindEvents();
+      renderQuestions();
+      startTimer();
+    });
+  </script>
+</body>
+</html>
